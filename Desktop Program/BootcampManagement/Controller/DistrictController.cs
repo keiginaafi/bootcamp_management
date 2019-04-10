@@ -1,44 +1,40 @@
 ﻿using BootcampManagement.Interface;
+using BootcampManagement.Save;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootcampManagement.Model;
-using BootcampManagement.Save;
 
 namespace BootcampManagement.Controller
 {
-    class UserController : SaveData, IUser
+    class DistrictController : SaveData, IDistrict
     {
         MyContext myContext = new MyContext();
-        //SaveData saveData = new SaveData(myContext);
-
         public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<TB_M_User> Get()
+        public List<TB_M_District> Get()
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Users.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.TB_M_Districts.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
-        public TB_M_User Get(int id)
+        public TB_M_District Get(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Insert(TB_M_User item)
+        public bool Insert(TB_M_District item)
         {
-            myContext.TB_M_Users.Add(item);
-            return saveData(myContext);
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public bool Update(int id, TB_M_User item)
+        public bool Update(int id, TB_M_District item)
         {
             throw new NotImplementedException();
         }

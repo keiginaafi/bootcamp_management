@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BootcampManagement"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="LoginFormWindow" Height="600" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="LoginFormWindow" Height="500" Width="900" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid MouseDown="Grid_MouseDown">
         <Grid Width="596" HorizontalAlignment="Left">
             <Image x:Name="___BootcampManagement_component_LoginImage_png" Source="/BootcampManagement;component/Image/LoginImage.png" Stretch="Fill" Margin="0,0,-24,0"/>
@@ -21,7 +21,7 @@
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="50,322,0,0" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" FontSize="16" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light"/>
             <TextBox x:Name="UsernameLogin_Tbox" HorizontalAlignment="Left" Height="35" materialDesign:HintAssist.Hint=" Your Username" Margin="50,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" FontSize="18" Background="#f2f2f2" Padding="5,0,0,0" VerticalContentAlignment="Top" FontFamily="Yu Gothic UI Light"/>
             <PasswordBox x:Name="PasswordLogin_Pbox" VerticalAlignment="Top" Height="35" materialDesign:HintAssist.Hint=" Your Password" FontSize="18" Background="#f2f2f2" Margin="50,354,56,0" Padding="5,0,0,0" VerticalContentAlignment="Top" FontFamily="Yu Gothic UI Light"/>
-            <Button x:Name="Register_Btn" Content="Register Now" HorizontalAlignment="Left" Margin="50,415,0,0" VerticalAlignment="Top" Width="125" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light"/>
+            <Button x:Name="Register_Btn" Content="Register Now" HorizontalAlignment="Left" Margin="50,415,0,0" VerticalAlignment="Top" Width="125" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Click="Register_Btn_Click"/>
             <Button x:Name="Login_Btn" Content="Login" HorizontalAlignment="Left" Margin="197,415,0,0" VerticalAlignment="Top" Width="125" Height="35" FontFamily="Yu Gothic UI Light"/>
             <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="50,470,0,0" TextWrapping="Wrap" Text="Forgot Your Password?" VerticalAlignment="Top" FontSize="16" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light"/>
             <TextBlock x:Name="ForgotPassword_Txt" HorizontalAlignment="Left" Margin="215,470,0,0" TextWrapping="Wrap" Text="Click Here" VerticalAlignment="Top" FontSize="16" Foreground="WhiteSmoke" PreviewMouseDown="ForgotPassword_Txt_PreviewMouseDown" Cursor="Hand" FontFamily="Yu Gothic UI Light"/>

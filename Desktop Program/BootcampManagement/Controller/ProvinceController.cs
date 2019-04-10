@@ -9,36 +9,32 @@ using BootcampManagement.Save;
 
 namespace BootcampManagement.Controller
 {
-    class UserController : SaveData, IUser
+    class ProvinceController : SaveData, IProvince
     {
         MyContext myContext = new MyContext();
-        //SaveData saveData = new SaveData(myContext);
-
         public bool Delete(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<TB_M_User> Get()
+        public List<TB_M_Province> Get()
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Users.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.TB_M_Provinces.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
-        public TB_M_User Get(int id)
+        public TB_M_Province Get(int id)
         {
             throw new NotImplementedException();
         }
 
-        public bool Insert(TB_M_User item)
+        public bool Insert(TB_M_Province item)
         {
-            myContext.TB_M_Users.Add(item);
-            return saveData(myContext);
-            //throw new NotImplementedException();
+            throw new NotImplementedException();
         }
 
-        public bool Update(int id, TB_M_User item)
+        public bool Update(int id, TB_M_Province item)
         {
             throw new NotImplementedException();
         }
