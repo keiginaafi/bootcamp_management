@@ -22,7 +22,7 @@ namespace BootcampManagement
     /// </summary>
     public partial class RegisterFormWindow : Window
     {
-        TB_M_Province tB_M_Province = new TB_M_Province();
+        //TB_M_Province tB_M_Province = new TB_M_Province();
         IProvince iProvince = new ProvinceController();
         public RegisterFormWindow()
         {
