@@ -72,7 +72,7 @@
                     <ComboBox x:Name="Village_Cmbbox" HorizontalAlignment="Left" Margin="30,585,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
                     <TextBlock x:Name="ConfirmPassword_Txt" TextWrapping="Wrap" Text="Password :" Margin="30,620,20,0" FontSize="15" FontFamily="Yu Gothic UI Light"/>
                     <PasswordBox x:Name="ConfirmPasswordRegister_Pbox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,645,20,0" Padding="5,0,0,0" VerticalContentAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
-                    <StackPanel Orientation="Horizontal" Margin="55,675,40,0" VerticalAlignment="Top" Height="169">
+                    <StackPanel Orientation="Horizontal" Margin="55,670,40,0" VerticalAlignment="Top" Height="169">
                         <Button x:Name="CancelRegister_Btn" Content="Cancel" Width="100" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Margin="0,66,30,65.4"/>
                         <Button x:Name="Register_Btn" Content="Register" Width="100" Height="35" FontFamily="Yu Gothic UI Light"/>
                     </StackPanel>

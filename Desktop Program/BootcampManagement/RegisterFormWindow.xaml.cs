@@ -31,7 +31,7 @@ namespace BootcampManagement
 
         private void Close_Btn_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Application.Current.Shutdown(); 
         }
     }
 }
