@@ -9,10 +9,10 @@ using BootcampManagement.Save;
 
 namespace BootcampManagement.Controller
 {
-    class UserController : IUser
+    class UserController : SaveData, IUser
     {
-        static MyContext myContext = new MyContext();
-        SaveData Newi = new SaveData(myContext);
+        MyContext myContext = new MyContext();
+        //SaveData saveData = new SaveData(myContext);
 
         public bool Delete(int id)
         {
@@ -21,7 +21,9 @@ namespace BootcampManagement.Controller
 
         public List<TB_M_User> Get()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            var get = myContext.TB_M_Users.Where(x => x.IsDelete == false).ToList();
+            return get;
         }
 
         public TB_M_User Get(int id)
@@ -32,8 +34,8 @@ namespace BootcampManagement.Controller
         public bool Insert(TB_M_User item)
         {
             myContext.TB_M_Users.Add(item);
-            //return valid.validation();
-            throw new NotImplementedException();
+            return saveData(myContext);
+            //throw new NotImplementedException();
         }
 
         public bool Update(int id, TB_M_User item)
