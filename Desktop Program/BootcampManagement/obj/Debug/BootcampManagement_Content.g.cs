@@ -8,8 +8,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/bootcampmanagement.exe")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/bootcampmanagement.pdb")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/bootcampmanagement.vshost.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.sqlserver.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/materialdesigncolors.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/materialdesignthemes.wpf.dll")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/materialdesignthemes.wpf.pdb")]
 
 
