@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace BootcampManagement
 {
     /// <summary>
-    /// Interaction logic for LoginFormWindow.xaml
+    /// Interaction logic for LoginForm.xaml
     /// </summary>
-    public partial class LoginFormWindow : Window
+    public partial class LoginForm : Window
     {
-        public LoginFormWindow()
+        public LoginForm()
         {
             InitializeComponent();
         }
@@ -41,9 +41,8 @@ namespace BootcampManagement
 
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
-            RegisterFormWindow register = new RegisterFormWindow();
-            register.Show();
-            
+            RegisterForm RegForm = new RegisterForm();
+            RegForm.Show();
         }
     }
 }
