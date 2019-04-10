@@ -79,7 +79,7 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SaveData\SaveData.cs" />
+    <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

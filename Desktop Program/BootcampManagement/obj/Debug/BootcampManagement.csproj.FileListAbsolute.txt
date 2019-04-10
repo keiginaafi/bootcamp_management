@@ -51,3 +51,4 @@ E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Pro
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config

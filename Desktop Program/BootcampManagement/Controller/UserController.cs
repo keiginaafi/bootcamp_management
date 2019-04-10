@@ -5,14 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootcampManagement.Model;
-using BootcampManagement.SaveData;
+using BootcampManagement.Save;
 
 namespace BootcampManagement.Controller
 {
     class UserController : IUser
     {
-        MyContext myContext = new MyContext();
-        //SaveData Newi = new SaveData();
+        static MyContext myContext = new MyContext();
+        SaveData Newi = new SaveData(myContext);
 
         public bool Delete(int id)
         {
