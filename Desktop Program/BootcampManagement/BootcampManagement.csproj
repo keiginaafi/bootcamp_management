@@ -35,14 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
       <Private>True</Private>
@@ -52,7 +44,6 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,17 +63,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
     <Compile Include="Controller\DistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
     <Compile Include="Controller\RegionController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\VillageController.cs" />
+=======
+>>>>>>> 99340b26fe385703e8ceccf731db0af748dd28dc
     <Compile Include="Forms\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
     <Compile Include="Interface\IRegion.cs" />
@@ -110,11 +105,15 @@
     <Compile Include="Migrations\201904100938407_add_new_model_CV.cs" />
     <Compile Include="Migrations\201904100938407_add_new_model_CV.Designer.cs">
       <DependentUpon>201904100938407_add_new_model_CV.cs</DependentUpon>
+=======
+    <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
+      <DependentUpon>CreateCVUserControl.xaml</DependentUpon>
+>>>>>>> 99340b26fe385703e8ceccf731db0af748dd28dc
     </Compile>
-    <Compile Include="Migrations\201904100950081_add_education_models.cs" />
-    <Compile Include="Migrations\201904100950081_add_education_models.Designer.cs">
-      <DependentUpon>201904100950081_add_education_models.cs</DependentUpon>
+    <Compile Include="UserControls\DashboardUserControl.xaml.cs">
+      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\201904101000599_add_master_and_transaction_organization.cs" />
     <Compile Include="Migrations\201904101000599_add_master_and_transaction_organization.Designer.cs">
       <DependentUpon>201904101000599_add_master_and_transaction_organization.cs</DependentUpon>
@@ -156,6 +155,8 @@
     <Compile Include="Model\TB_T_Organization.cs" />
     <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
+=======
+>>>>>>> 99340b26fe385703e8ceccf731db0af748dd28dc
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -176,22 +177,16 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\CreateCVUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\DashboardUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\BaseModel.cs" />
-    <Compile Include="Interface\IUser.cs" />
-    <Compile Include="Migrations\201904100649548_UpdateMasterUser.cs" />
-    <Compile Include="Migrations\201904100649548_UpdateMasterUser.Designer.cs">
-      <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\TB_M_District.cs" />
-    <Compile Include="Model\TB_M_Province.cs" />
-    <Compile Include="Model\TB_M_Region.cs" />
-    <Compile Include="Model\TB_M_Religion.cs" />
-    <Compile Include="Model\TB_M_User.cs" />
-    <Compile Include="Model\TB_M_Village.cs" />
-    <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -205,6 +200,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201904100649548_UpdateMasterUser.resx">
       <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +240,8 @@
     <EmbeddedResource Include="Migrations\201904101523197_add_master_and_transaction_work_assignment.resx">
       <DependentUpon>201904101523197_add_master_and_transaction_work_assignment.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 99340b26fe385703e8ceccf731db0af748dd28dc
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -265,7 +263,15 @@
     <Resource Include="Image\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Interface\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\metrodata.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\task-complete.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="BootcampManagement.UserControls.CreateCVUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BootcampManagement.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="690" d:DesignWidth="850">
+    <Grid>
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="Curriculum Vitae" HorizontalAlignment="Center" FontSize="35" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="145" Margin="38,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
+        <TextBlock TextWrapping="Wrap" Text="Education" HorizontalAlignment="Center" FontSize="20" Background="White" FontFamily="Yu Gothic UI Light" Margin="54,48,691.6,611.6" Padding="10,0,10,0" Width="104"/>
+        <StackPanel Orientation="Horizontal" Margin="75,80,0,0">
+            <TextBlock TextWrapping="Wrap" Text="University :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,303,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Major :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,105,0,0">
+            <TextBox x:Name="University_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Major_Tbox" HorizontalAlignment="Left" Height="23" Margin="45,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,140,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Faculty :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,320,0"/>
+            <TextBlock TextWrapping="Wrap" Text="GPA (Scale 4.00) :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,64,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Graduation Year :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,165,0,0">
+            <TextBox x:Name="Faculty_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="GPA_Tbox" HorizontalAlignment="Left" Height="23" Margin="45,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="GradationYear_Tbox" HorizontalAlignment="Left" Height="23" Margin="25,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="90" Margin="38,230,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
+        <TextBlock TextWrapping="Wrap" Text="Organization" HorizontalAlignment="Center" FontSize="20" Background="White" FontFamily="Yu Gothic UI Light" Margin="54,215,665.6,444.6" Padding="10,0,10,0" Width="130"/>
+        <StackPanel Orientation="Horizontal" Margin="75,250,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Organization Name :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,239,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Note :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,275,0,0">
+            <ComboBox x:Name="OrganizationName_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Note_Tbox" HorizontalAlignment="Left" Height="23" Margin="45,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="145" Margin="38,342,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
+        <TextBlock TextWrapping="Wrap" Text="Experience" HorizontalAlignment="Center" FontSize="20" Background="White" FontFamily="Yu Gothic UI Light" Margin="54,326,681.6,333.6" Padding="10,0,10,0" Width="114"/>
+        <StackPanel Margin="75,360,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Company Name :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,303,0"/>
+            <TextBox x:Name="CompanyName_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <TextBlock TextWrapping="Wrap" Text="Periode :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,5,0,0"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="PeriodeStart_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="-" FontSize="45" FontFamily="Yu Gothic UI Light" Margin="9,-24,9,0" Height="45" VerticalAlignment="Top"/>
+                <TextBox x:Name="PeriodeEnd_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" FontFamily="Yu Gothic UI Light"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="445,360,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Description :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Description_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+
+
+        <Rectangle HorizontalAlignment="Left" Height="145" Margin="38,515,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
+        <TextBlock TextWrapping="Wrap" Text="Application &amp; Skill" HorizontalAlignment="Center" FontSize="20" Background="White" FontFamily="Yu Gothic UI Light" Margin="54,499,625.6,160.6" Padding="10,0,10,0" Width="170"/>
+        <StackPanel Orientation="Horizontal" Margin="75,535,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Application :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,239,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Development Tool :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,560,0,0">
+            <ComboBox x:Name="Application_Cmbbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <ComboBox x:Name="DevelopmentTool_Cmbbox" HorizontalAlignment="Left" Height="23" Margin="45,5,0,0" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,585,0,0">
+            <TextBlock TextWrapping="Wrap" Text="Language :" FontSize="15" FontFamily="Yu Gothic UI Light" Margin="0,0,239,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Programming Language :" FontSize="15" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="75,275,0,0">
+            <ComboBox x:Name="Language_Cmbbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <ComboBox x:Name="ProgrammingLanguage_Cmbbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
