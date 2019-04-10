@@ -38,12 +38,5 @@ namespace BootcampManagement
         {
             DragMove();
         }
-
-        private void Register_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            RegisterFormWindow register = new RegisterFormWindow();
-            register.Show();
-            
-        }
     }
 }

@@ -7,13 +7,13 @@ namespace BootcampManagement.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class editNullableDeleteDate : IMigrationMetadata
+    public sealed partial class add_master_and_transaction_language : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(editNullableDeleteDate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(add_master_and_transaction_language));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904100817075_editNullableDeleteDate"; }
+            get { return "201904101345390_add_master_and_transaction_language"; }
         }
         
         string IMigrationMetadata.Source
