@@ -84,3 +84,6 @@ C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\Bo
 C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_account.resources
 C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_department.resources
 C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_trainer.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_CV.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_education_models.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_master_and_transaction_organization.resources

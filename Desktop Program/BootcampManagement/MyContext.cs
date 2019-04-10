@@ -26,6 +26,13 @@ namespace BootcampManagement
         public DbSet<TB_M_Employee> TB_M_Employees { get; set; }
         public DbSet<TB_M_Department> TB_M_Departments { get; set; }
         public DbSet<TB_M_Trainer> TB_M_Trainers { get; set; }
+        public DbSet<TB_T_CV> TB_M_CVs { get; set; }
+        public DbSet<TB_T_Education> TB_T_Educations { get; set; }
+        public DbSet<TB_M_University> TB_M_Universities { get; set; }
+        public DbSet<TB_M_Faculty> TB_M_Faculties { get; set; }
+        public DbSet<TB_M_Major> TB_M_Majors { get; set; }
+        public DbSet<TB_M_Organization> TB_M_Organizations { get; set; }
+        public DbSet<TB_T_Organization> TB_T_Organizations { get; set; }
 
     }
 }
