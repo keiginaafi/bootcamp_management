@@ -20,11 +20,12 @@ namespace BootcampManagement
     /// <summary>
     /// Interaction logic for RegisterFormWindow.xaml
     /// </summary>
-    public partial class RegisterFormWindow : Window
+
+    public partial class RegisterForm : Window
     {
-        //TB_M_Province tB_M_Province = new TB_M_Province();
         IProvince iProvince = new ProvinceController();
-        public RegisterFormWindow()
+
+        public RegisterForm()
         {
             InitializeComponent();
             List<TB_M_Province> ProvinceList = iProvince.Get();
@@ -38,16 +39,7 @@ namespace BootcampManagement
 
         private void Close_Btn_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown(); 
-        }
-
-        private void FirstName_Tbox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-        }
-
-        private void Province_Cmbbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
+            Application.Current.Shutdown();
         }
     }
 }
