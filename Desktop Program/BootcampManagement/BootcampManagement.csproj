@@ -79,6 +79,16 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100914524_add_new_model_employee.cs" />
+    <Compile Include="Migrations\201904100914524_add_new_model_employee.Designer.cs">
+      <DependentUpon>201904100914524_add_new_model_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904100919459_add_new_model_role.cs" />
+    <Compile Include="Migrations\201904100919459_add_new_model_role.Designer.cs">
+      <DependentUpon>201904100919459_add_new_model_role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TB_M_Employee.cs" />
+    <Compile Include="Model\TB_M_Role.cs" />
     <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
@@ -131,6 +141,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201904100649548_UpdateMasterUser.resx">
       <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100914524_add_new_model_employee.resx">
+      <DependentUpon>201904100914524_add_new_model_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100919459_add_new_model_role.resx">
+      <DependentUpon>201904100919459_add_new_model_role.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

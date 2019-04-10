@@ -52,3 +52,32 @@ E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Pro
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
 C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\App.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.g.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.UpdateMasterUser.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_employee.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\Bootcamp Management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_new_model_role.resources
