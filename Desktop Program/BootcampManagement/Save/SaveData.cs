@@ -15,10 +15,9 @@ namespace BootcampManagement.Save
         {
             myContext = _myContext;
         }
-        public SaveData() { }
 
         //var result = Convert.ToBoolean(myContext.SaveChanges());
-        public bool saveData(MyContext myContext)
+        public bool saveData()
         {
             var result = (myContext.SaveChanges());
             if (result > 0)
