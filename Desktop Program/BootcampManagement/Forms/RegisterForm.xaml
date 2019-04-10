@@ -33,60 +33,60 @@
         </StackPanel>
         <StackPanel Margin="0,75,0,0">
             <StackPanel Orientation="Horizontal">
-                <TextBlock TextWrapping="Wrap" Text="First Name :" Margin="30,20,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
-                <TextBlock TextWrapping="Wrap" Text="Last Name :" Margin="235,20,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="First Name :" Margin="30,20,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
+                <TextBlock TextWrapping="Wrap" Text="Last Name :" Margin="229,20,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBox x:Name="FirstName_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
                 <TextBox x:Name="LastName_Tbox" HorizontalAlignment="Left" Height="23" Margin="60,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Date of Birth :" Margin="30,5,30,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Date of Birth :" Margin="30,5,30,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <DatePicker HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Status :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Status :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <ComboBox x:Name="Status_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Gender :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Gender :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <ComboBox x:Name="Gender_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Religion :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Religion :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <ComboBox x:Name="Religion_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <TextBox x:Name="Email_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Contact :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Contact :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <TextBox x:Name="Contact_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Street Address :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Street Address :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <TextBox x:Name="StreetAddress_Tbox" HorizontalAlignment="Left" Margin="30,5,30,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="570" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock TextWrapping="Wrap" Text="Province :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
-                <TextBlock TextWrapping="Wrap" Text="City :" Margin="247,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Province :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
+                <TextBlock TextWrapping="Wrap" Text="City :" Margin="241,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <ComboBox x:Name="Province_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
                 <ComboBox x:Name="City_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock TextWrapping="Wrap" Text="Sub-City :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
-                <TextBlock TextWrapping="Wrap" Text="Village :" Margin="247,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Sub-City :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
+                <TextBlock TextWrapping="Wrap" Text="Village :" Margin="241,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <ComboBox x:Name="SubCity_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
                 <ComboBox x:Name="Village_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBlock TextWrapping="Wrap" Text="Password :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
-                <TextBlock TextWrapping="Wrap" Text="Password :" Margin="242,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Light"/>
+                <TextBlock TextWrapping="Wrap" Text="Password :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
+                <TextBlock TextWrapping="Wrap" Text="Password :" Margin="237,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <PasswordBox x:Name="Password_Pbox" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalContentAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
@@ -95,9 +95,9 @@
             <StackPanel Orientation="Horizontal" Margin="30,15,0,0">
                 <CheckBox Style="{StaticResource MaterialDesignCheckBox}" Padding="10,-1,0,0"/>
                 <TextBlock TextWrapping="Wrap" Text="I Accept the" FontSize="12"  FontFamily="Yu Gothic UI Light" Margin="0,0,5,0"/>
-                <TextBlock TextWrapping="Wrap" Text="Term of Use"  FontSize="12"  FontFamily="Yu Gothic UI" Margin="0,0,5,0" Foreground="#000066" Cursor="Hand"/>
+                <TextBlock TextWrapping="Wrap" Text="Term of Use"  FontSize="12"  FontFamily="Yu Gothic UI Bold" Margin="0,0,5,0" Foreground="#000066" Cursor="Hand"/>
                 <TextBlock TextWrapping="Wrap" Text="&amp;" FontSize="12"  FontFamily="Yu Gothic UI Light" Margin="0,0,5,0"/>
-                <TextBlock TextWrapping="Wrap" Text="Privacy Policy" FontSize="12"  FontFamily="Yu Gothic UI" Foreground="#000066" Cursor="Hand"/>
+                <TextBlock TextWrapping="Wrap" Text="Privacy Policy" FontSize="12"  FontFamily="Yu Gothic UI Bold" Foreground="#000066" Cursor="Hand"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="55,20,35,25" VerticalAlignment="Top" HorizontalAlignment="Right">
                 <Button x:Name="Cancel_Btn" Content="Cancel" Width="100" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Margin="0,0,25,0"/>
