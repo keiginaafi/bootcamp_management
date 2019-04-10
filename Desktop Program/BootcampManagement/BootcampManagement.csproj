@@ -35,6 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.1.1.2\lib\net45\MaterialDesignColors.dll</HintPath>
       <Private>True</Private>
@@ -44,6 +52,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,7 +77,10 @@
     <Compile Include="Controller\RegionController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\VillageController.cs" />
+<<<<<<< HEAD
     <Compile Include="Core\BaseModel.cs" />
+=======
+>>>>>>> remotes/origin/master
     <Compile Include="Forms\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
@@ -78,6 +90,7 @@
     <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
     <Compile Include="Interface\IRegion.cs" />
+<<<<<<< HEAD
     <Compile Include="Interface\IUser.cs" />
     <Compile Include="Interface\IVillage.cs" />
     <Compile Include="Migrations\201904100649548_UpdateMasterUser.cs" />
@@ -167,10 +180,18 @@
     <Compile Include="Save\SaveData.cs" />
     <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
       <DependentUpon>CreateCVUserControl.xaml</DependentUpon>
+=======
+    <Compile Include="Interface\IVillage.cs" />
+    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.cs" />
+    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.Designer.cs">
+      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+>>>>>>> remotes/origin/master
     </Compile>
-    <Compile Include="UserControls\DashboardUserControl.xaml.cs">
-      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
+    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.cs" />
+    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.Designer.cs">
+      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -191,16 +212,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\CreateCVUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\DashboardUserControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\BaseModel.cs" />
+    <Compile Include="Interface\IUser.cs" />
+    <Compile Include="Migrations\201904100649548_UpdateMasterUser.cs" />
+    <Compile Include="Migrations\201904100649548_UpdateMasterUser.Designer.cs">
+      <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\TB_M_District.cs" />
+    <Compile Include="Model\TB_M_Province.cs" />
+    <Compile Include="Model\TB_M_Region.cs" />
+    <Compile Include="Model\TB_M_Religion.cs" />
+    <Compile Include="Model\TB_M_User.cs" />
+    <Compile Include="Model\TB_M_Village.cs" />
+    <Compile Include="MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -217,6 +244,7 @@
     <EmbeddedResource Include="Migrations\201904100649548_UpdateMasterUser.resx">
       <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201904100914524_add_new_model_employee.resx">
       <DependentUpon>201904100914524_add_new_model_employee.cs</DependentUpon>
     </EmbeddedResource>
@@ -249,6 +277,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904101345390_add_master_and_transaction_language.resx">
       <DependentUpon>201904101345390_add_master_and_transaction_language.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201904100817075_editNullableDeleteDate.resx">
+      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100821191_editNullableUpdateDate.resx">
+      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
+>>>>>>> remotes/origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -274,6 +309,7 @@
     <Resource Include="Image\user.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Folder Include="bin\Release\" />
     <Folder Include="Validation\" />
   </ItemGroup>
@@ -282,6 +318,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image\task-complete.png" />
+=======
+    <Folder Include="UserControls\" />
+>>>>>>> remotes/origin/master
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\BootcampManagement.exe" />

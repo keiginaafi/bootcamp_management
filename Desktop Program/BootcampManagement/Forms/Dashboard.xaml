@@ -1,4 +1,4 @@
-﻿<Window x:Class="BootcampManagement.Dashboard"
+﻿<Window x:Class="BootcampManagement.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,54 +6,11 @@
         xmlns:local="clr-namespace:BootcampManagement"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Bootcamp Management" Height="750" Width="1200" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        Title="Bootcamp Management" Height="600" Width="1000" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded">
     <Grid>
-        <Grid VerticalAlignment="Top" Height="50" Width="900" HorizontalAlignment="Right">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                <Button x:Name="Account_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" ToolTip="Account">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Mrp4m" HorizontalAlignment="Left" Margin="-10,0,15,0" FontFamily="Yu Gothic UI Light"></TextBlock>
-                        <materialDesign:PackIcon Kind="AccountCircle" Width="30" Height="30" Margin="-10 -5" HorizontalAlignment="Right"/>
-                    </StackPanel>
-                </Button>
-                <Button x:Name="Mail_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" HorizontalAlignment="Center" ToolTip="Mail">
-                    <materialDesign:PackIcon Kind="Mail" Width="30" Height="30" Margin="-10"/>
-                </Button>
-                <Button x:Name="Setting_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" HorizontalAlignment="Center" ToolTip="Setting" IsEnabled="False">
-                    <materialDesign:PackIcon Kind="Gear" Width="30" Height="30" Margin="-10" Foreground="Transparent"/>
-                </Button>
-                <Button x:Name="Close_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" HorizontalAlignment="Center" Click="Close_Btn_Click" ToolTip="Close Application">
-                    <materialDesign:PackIcon Kind="Close" Width="30" Height="30" Margin="-10"/>
-                </Button>
-            </StackPanel>
-        </Grid>
-        <Grid Height="750" Width="300" HorizontalAlignment="Left" Background="#1F2626">
-            <materialDesign:TransitioningContent x:Name="Slide_TransitionContent" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
-                <Grid x:Name="Cursor_Grid" Width="10" HorizontalAlignment="Left" Height="70" Background="AliceBlue" VerticalAlignment="Top"/>
-            </materialDesign:TransitioningContent>
-            <ListView x:Name="Menu_ListView" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light" SelectionChanged="Menu_ListView_SelectionChanged">
-                <ListViewItem Height="100">
-                    <StackPanel Orientation="Horizontal">
-                        <Image x:Name="___BootcampManagement_component_metrodata_png" Source="/BootcampManagement;component/Image/metrodata.png" Stretch="Fill" Height="82" Width="244" Margin="20 0"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="50">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="Museum" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Dashboard" VerticalAlignment="Center" FontSize="20"/>
-                    </StackPanel>
-                </ListViewItem>
-                <ListViewItem Height="50">
-                    <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="FileDocumentBox" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Build Your CV" VerticalAlignment="Center" FontSize="20"/>
-                    </StackPanel>
-                </ListViewItem>
-            </ListView>
-        </Grid>
         <Grid>
-            <Grid x:Name="Main_Grid" VerticalAlignment="Top" Width="900" Height="690" Margin="300,50,0,0"></Grid>
+            <Grid x:Name="Main_Grid" VerticalAlignment="Top"></Grid>
         </Grid>
     </Grid>
 </Window>

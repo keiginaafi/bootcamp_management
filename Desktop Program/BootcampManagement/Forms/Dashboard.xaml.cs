@@ -1,5 +1,4 @@
-﻿using BootcampManagement.UserControls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,53 +18,16 @@ namespace BootcampManagement
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class Dashboard : Window
+    public partial class MainWindow : Window
     {
-        public Dashboard()
+        public MainWindow()
         {
             InitializeComponent();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Main_Grid.Children.Clear();
-            Main_Grid.Children.Add(new DashboardUserControl());
-            Cursor_Grid.Visibility = Visibility.Collapsed;
-        }
-
-        private void Close_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
-
-        private void Menu_ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            int index = Menu_ListView.SelectedIndex;
-            moveCursorMenu(index);
-
-            switch (index)
-            {
-                case 0:
-                    Main_Grid.Children.Clear();
-                    Main_Grid.Children.Add(new DashboardUserControl());
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        void moveCursorMenu(int index)
-        {
-            Slide_TransitionContent.OnApplyTemplate();
-            if (index == 0)
-            {
-                Cursor_Grid.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                Cursor_Grid.Visibility = Visibility.Visible;
-                Cursor_Grid.Margin = new Thickness(0, 120 + (70 * (index - 1)), 0, 0);
-            }
+           
         }
     }
 }

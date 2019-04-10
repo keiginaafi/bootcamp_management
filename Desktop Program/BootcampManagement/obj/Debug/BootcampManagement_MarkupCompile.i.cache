@@ -4,17 +4,30 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
+=======
+E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
+>>>>>>> remotes/origin/master
 BootcampManagement
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
 5-1669813531
 81988411588
 85985130038
 151665897386
 Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;UserControls\CreateCVUserControl.xaml;UserControls\DashboardUserControl.xaml;
+=======
+E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
+31935631130
 
-True
+371240425051
+1889035557
+Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;
+>>>>>>> remotes/origin/master
+
+False
 
