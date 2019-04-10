@@ -111,9 +111,14 @@
     <Compile Include="Migrations\201904101000599_add_master_and_transaction_organization.Designer.cs">
       <DependentUpon>201904101000599_add_master_and_transaction_organization.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904101336288_add_master_and_transaction_experiences.cs" />
+    <Compile Include="Migrations\201904101336288_add_master_and_transaction_experiences.Designer.cs">
+      <DependentUpon>201904101336288_add_master_and_transaction_experiences.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\TB_M_Account.cs" />
     <Compile Include="Model\TB_M_Department.cs" />
     <Compile Include="Model\TB_M_Employee.cs" />
+    <Compile Include="Model\TB_M_Experience.cs" />
     <Compile Include="Model\TB_M_Faculty.cs" />
     <Compile Include="Model\TB_M_Major.cs" />
     <Compile Include="Model\TB_M_Organization.cs" />
@@ -122,6 +127,7 @@
     <Compile Include="Model\TB_M_University.cs" />
     <Compile Include="Model\TB_T_CV.cs" />
     <Compile Include="Model\TB_T_Education.cs" />
+    <Compile Include="Model\TB_T_Experiences.cs" />
     <Compile Include="Model\TB_T_Organization.cs" />
     <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904101000599_add_master_and_transaction_organization.resx">
       <DependentUpon>201904101000599_add_master_and_transaction_organization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101336288_add_master_and_transaction_experiences.resx">
+      <DependentUpon>201904101336288_add_master_and_transaction_experiences.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
