@@ -63,17 +63,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="LoginFormWindow.xaml.cs">
-      <DependentUpon>LoginFormWindow.xaml</DependentUpon>
+    <Compile Include="Forms\LoginForm.xaml.cs">
+      <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegisterFormWindow.xaml.cs">
-      <DependentUpon>RegisterFormWindow.xaml</DependentUpon>
+    <Compile Include="Forms\RegisterForm.xaml.cs">
+      <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
-    <Page Include="LoginFormWindow.xaml">
+    <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Forms\Dashboard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -81,11 +81,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Forms\Dashboard.xaml.cs">
+      <DependentUpon>Dashboard.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RegisterFormWindow.xaml">
+    <Page Include="Forms\RegisterForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -119,14 +119,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="LoginImage.png" />
+    <Resource Include="Image\LoginImage.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="user.png" />
+    <Resource Include="Image\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Image\" />
+    <Folder Include="Controller\" />
+    <Folder Include="Interface\" />
     <Folder Include="UserControls\" />
+    <Folder Include="Validation\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -9,13 +9,13 @@
         Title="LoginFormWindow" Height="600" Width="1000" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid MouseDown="Grid_MouseDown">
         <Grid Width="596" HorizontalAlignment="Left">
-            <Image x:Name="___BootcampManagement_component_LoginImage_png" Source="/BootcampManagement;component/LoginImage.png" Stretch="Fill" Margin="0,0,-24,0"/>
+            <Image x:Name="___BootcampManagement_component_LoginImage_png" Source="/BootcampManagement;component/Image/LoginImage.png" Stretch="Fill" Margin="0,0,-24,0"/>
         </Grid>
         <Grid Width="378" HorizontalAlignment="Right" Background="#00003D">
             <Button x:Name="Close_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" HorizontalAlignment="Center" ToolTip="Close Application" Margin="330,10,12,558" Click="Close_Btn_Click" Width="36" Height="Auto">
                 <materialDesign:PackIcon Kind="Close" Width="25" Height="25" Margin="-10"/>
             </Button>
-            <Image x:Name="___BootcampManagement_component_user_png" Margin="157,101,157,435" Source="/BootcampManagement;component/user.png" Stretch="Fill"/>
+            <Image x:Name="___BootcampManagement_component_user_png" Margin="157,101,157,435" Source="/BootcampManagement;component/Image/user.png" Stretch="Fill"/>
             <TextBlock x:Name="textBlock2" Margin="0,163,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="35" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light"/>
             <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="50,239,0,0" TextWrapping="Wrap" Text="Username :" VerticalAlignment="Top" FontSize="16" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light"/>
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="50,322,0,0" TextWrapping="Wrap" Text="Password :" VerticalAlignment="Top" FontSize="16" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light"/>
