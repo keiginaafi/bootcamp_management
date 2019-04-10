@@ -87,8 +87,23 @@
     <Compile Include="Migrations\201904100919459_add_new_model_role.Designer.cs">
       <DependentUpon>201904100919459_add_new_model_role.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100924017_add_new_model_account.cs" />
+    <Compile Include="Migrations\201904100924017_add_new_model_account.Designer.cs">
+      <DependentUpon>201904100924017_add_new_model_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904100927154_add_new_model_department.cs" />
+    <Compile Include="Migrations\201904100927154_add_new_model_department.Designer.cs">
+      <DependentUpon>201904100927154_add_new_model_department.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904100930066_add_new_model_trainer.cs" />
+    <Compile Include="Migrations\201904100930066_add_new_model_trainer.Designer.cs">
+      <DependentUpon>201904100930066_add_new_model_trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TB_M_Account.cs" />
+    <Compile Include="Model\TB_M_Department.cs" />
     <Compile Include="Model\TB_M_Employee.cs" />
     <Compile Include="Model\TB_M_Role.cs" />
+    <Compile Include="Model\TB_M_Trainer.cs" />
     <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
@@ -147,6 +162,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904100919459_add_new_model_role.resx">
       <DependentUpon>201904100919459_add_new_model_role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100924017_add_new_model_account.resx">
+      <DependentUpon>201904100924017_add_new_model_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100927154_add_new_model_department.resx">
+      <DependentUpon>201904100927154_add_new_model_department.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100930066_add_new_model_trainer.resx">
+      <DependentUpon>201904100930066_add_new_model_trainer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
