@@ -35,6 +35,7 @@ namespace BootcampManagement
         public DbSet<TB_T_Organization> TB_T_Organizations { get; set; }
         public DbSet<TB_M_Experience> TB_M_Experiences { get; set; }
         public DbSet<TB_T_Experiences> TB_T_Experiences { get; set; }
-
+        public DbSet<TB_M_Application> TB_M_Applications { get; set; }
+        public DbSet<TB_T_Application> TB_T_Applications { get; set; }
     }
 }
