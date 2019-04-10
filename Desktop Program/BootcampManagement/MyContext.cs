@@ -39,5 +39,7 @@ namespace BootcampManagement
         public DbSet<TB_T_Application> TB_T_Applications { get; set; }
         public DbSet<TB_M_Language> TB_M_Languages { get; set; }
         public DbSet<TB_T_Language> TB_T_Languages { get; set; }
+        public DbSet<TB_M_WorkAssignment> TB_M_WorkAssignments { get; set; }
+        public DbSet<TB_T_WorkAssignment> TB_T_WorkAssignments { get; set; }
     }
 }
