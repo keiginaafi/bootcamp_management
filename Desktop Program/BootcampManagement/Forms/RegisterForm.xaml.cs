@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BootcampManagement.Controller;
+using BootcampManagement.Interface;
+using BootcampManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,13 @@ namespace BootcampManagement
     /// </summary>
     public partial class RegisterFormWindow : Window
     {
+        TB_M_Province tB_M_Province = new TB_M_Province();
+        IProvince iProvince = new ProvinceController();
         public RegisterFormWindow()
         {
             InitializeComponent();
+            List<TB_M_Province> ProvinceList = iProvince.Get();
+            Province_Cmbbox.ItemsSource = ProvinceList;
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -32,6 +39,15 @@ namespace BootcampManagement
         private void Close_Btn_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown(); 
+        }
+
+        private void FirstName_Tbox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+        }
+
+        private void Province_Cmbbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

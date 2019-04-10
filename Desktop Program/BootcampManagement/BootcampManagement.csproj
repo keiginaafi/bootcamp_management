@@ -72,12 +72,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\DistrictController.cs" />
+    <Compile Include="Controller\ProvinceController.cs" />
+    <Compile Include="Controller\RegionController.cs" />
     <Compile Include="Controller\UserController.cs" />
+    <Compile Include="Controller\VillageController.cs" />
     <Compile Include="Forms\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IDistrict.cs" />
+    <Compile Include="Interface\IProvince.cs" />
+    <Compile Include="Interface\IRegion.cs" />
+    <Compile Include="Interface\IVillage.cs" />
+    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.cs" />
+    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.Designer.cs">
+      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.cs" />
+    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.Designer.cs">
+      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
     </Compile>
     <Compile Include="Save\SaveData.cs" />
     <Page Include="Forms\LoginForm.xaml">
@@ -131,6 +147,12 @@
     </Compile>
     <EmbeddedResource Include="Migrations\201904100649548_UpdateMasterUser.resx">
       <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100817075_editNullableDeleteDate.resx">
+      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904100821191_editNullableUpdateDate.resx">
+      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
