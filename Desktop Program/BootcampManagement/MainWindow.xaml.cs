@@ -1,5 +1,4 @@
-﻿using BootcampManagement.UserControls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,8 +27,7 @@ namespace BootcampManagement
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Main_Grid.Children.Clear();
-            Main_Grid.Children.Add(new LoginUserControl());
+           
         }
     }
 }

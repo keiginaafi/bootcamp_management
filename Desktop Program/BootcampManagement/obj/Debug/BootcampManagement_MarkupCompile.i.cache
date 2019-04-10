@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
-4-1034336945
+3-2132877177
 
-12945746983
+11-626878091
 151665897386
-LoginFormWindow.xaml;MainWindow.xaml;UserControls\LoginUserControl.xaml;UserControls\RegisterUserControl.xaml;
+LoginFormWindow.xaml;MainWindow.xaml;RegisterFormWindow.xaml;
 
-True
+False
 
