@@ -68,7 +68,7 @@ namespace BootcampManagement
             else
             {
                 Cursor_Grid.Visibility = Visibility.Visible;
-                Cursor_Grid.Margin = new Thickness(0, 120 + (70 * (index - 1)), 0, 0);
+                Cursor_Grid.Margin = new Thickness(0, 100 + (50 * (index - 1)), 0, 0);
             }
         }
     }

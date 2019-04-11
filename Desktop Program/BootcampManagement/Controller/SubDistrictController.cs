@@ -1,15 +1,15 @@
 ﻿using BootcampManagement.Interface;
+using BootcampManagement.Save;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BootcampManagement.Model;
-using BootcampManagement.Save;
 
 namespace BootcampManagement.Controller
 {
-    class RegionController : SaveData, IRegion
+    class SubDistrictController : SaveData, ISubDistrict
     {
         MyContext myContext = new MyContext();
         public bool Delete(int id)
@@ -17,18 +17,19 @@ namespace BootcampManagement.Controller
             throw new NotImplementedException();
         }
 
-        public List<TB_M_Region> Get()
+        public List<TB_M_Sub_District> Get()
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Regions.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.TB_M_Sub_Districts.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
-        public TB_M_Region Get(int id)
+        public TB_M_Sub_District Get(int id)
         {
             throw new NotImplementedException();
         }
 
+<<<<<<< HEAD:Desktop Program/BootcampManagement/Controller/RegionController.cs
         public List<TB_M_Region> GetList(int id)
         {
             //throw new NotImplementedException();
@@ -37,11 +38,14 @@ namespace BootcampManagement.Controller
         }
 
         public bool Insert(TB_M_Region item)
+=======
+        public bool Insert(TB_M_Sub_District item)
+>>>>>>> remotes/origin/master:Desktop Program/BootcampManagement/Controller/SubDistrictController.cs
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(int id, TB_M_Region item)
+        public bool Update(int id, TB_M_Sub_District item)
         {
             throw new NotImplementedException();
         }
