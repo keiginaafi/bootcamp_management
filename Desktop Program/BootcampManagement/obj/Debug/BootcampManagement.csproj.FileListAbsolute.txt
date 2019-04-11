@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
@@ -84,3 +85,51 @@ C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Locker.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_AccessCard.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Locker.baml
+=======
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\AddTraining.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_DailyScore.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Lesson.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Site.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\User_CreateCV.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\User_Dashboard.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\AddTraining.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_DailyScore.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Lesson.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\Trainer_Site.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\User_CreateCV.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\User_Dashboard.baml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.g.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_model_programming_language.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.add_column_name_to_organization.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.updatetypedata.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.updatetypedataDate.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.updatetypedataDatebasemodel.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.fixerrordebugg.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.typedata_migration.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
+>>>>>>> f8fdfd99c01cd4d3da4b6c1a1cdef07b91a02148
