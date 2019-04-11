@@ -10,6 +10,7 @@ namespace BootcampManagement.Interface
     interface IDistrict
     {
         List<TB_M_District> Get();
+        List<TB_M_District> GetList(int id);
         TB_M_District Get(int id);
         bool Insert(TB_M_District item);
         bool Update(int id, TB_M_District item);

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
 BootcampManagement
 none
 false
 DEBUG;TRACE
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
 5-1669813531
 
-39-1560028161
-18331457405
+392055452815
+18679364465
 Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;UserControls\CreateCVUserControl.xaml;UserControls\DashboardUserControl.xaml;
 
-True
+False
 

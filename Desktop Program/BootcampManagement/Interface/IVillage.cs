@@ -10,6 +10,7 @@ namespace BootcampManagement.Interface
     interface IVillage
     {
         List<TB_M_Village> Get();
+        List<TB_M_Village> GetList(int id);
         TB_M_Village Get(int id);
         bool Insert(TB_M_Village item);
         bool Update(int id, TB_M_Village item);

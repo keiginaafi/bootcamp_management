@@ -73,16 +73,27 @@
                 <TextBlock TextWrapping="Wrap" Text="City :" Margin="241,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <ComboBox x:Name="Province_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
-                <ComboBox x:Name="City_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <ComboBox x:Name="Province_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
+                          ItemsSource="{Binding Source= ProvinceList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          SelectionChanged="Province_Cmbbox_SelectionChanged"
+                          />
+                <ComboBox x:Name="City_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
+                          ItemsSource="{Binding Source= RegionList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          SelectionChanged="City_Cmbbox_SelectionChanged"
+                          />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock TextWrapping="Wrap" Text="Sub-City :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <TextBlock TextWrapping="Wrap" Text="Village :" Margin="241,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <ComboBox x:Name="SubCity_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
-                <ComboBox x:Name="Village_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <ComboBox x:Name="SubCity_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
+                          ItemsSource="{Binding Source= SubCityList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          SelectionChanged="SubCity_Cmbbox_SelectionChanged"
+                          />
+                <ComboBox x:Name="Village_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
+                          ItemsSource="{Binding Source= VillageList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock TextWrapping="Wrap" Text="Password :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>

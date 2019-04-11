@@ -29,6 +29,13 @@ namespace BootcampManagement.Controller
             throw new NotImplementedException();
         }
 
+        public List<TB_M_Region> GetList(int id)
+        {
+            //throw new NotImplementedException();
+            var get = myContext.TB_M_Regions.Where(x => x.TB_M_Provinces.id == id).ToList();
+            return get;
+        }
+
         public bool Insert(TB_M_Region item)
         {
             throw new NotImplementedException();

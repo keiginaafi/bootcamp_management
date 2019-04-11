@@ -116,3 +116,7 @@ C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.UpdateMasterUser.resources
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.editNullableDeleteDate.resources
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.editNullableUpdateDate.resources
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.g.cs
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.g.cs
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.baml
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.baml

@@ -20,10 +20,13 @@ namespace BootcampManagement
     /// <summary>
     /// Interaction logic for RegisterFormWindow.xaml
     /// </summary>
-
     public partial class RegisterForm : Window
     {
         IProvince iProvince = new ProvinceController();
+        IRegion iRegion = new RegionController();
+        IDistrict iDistrict = new DistrictController();
+        IVillage iVillage = new VillageController();
+        MyContext myContext = new MyContext();
 
         public RegisterForm()
         {
@@ -40,6 +43,38 @@ namespace BootcampManagement
         private void Close_Btn_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void City_Cmbbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object selectedItem = City_Cmbbox.SelectedValue;
+            if (selectedItem != null)
+            {
+                List<TB_M_District> SubCityList = iDistrict.GetList(Convert.ToInt16(selectedItem));
+                SubCity_Cmbbox.ItemsSource = SubCityList;
+
+            }
+        }
+
+        private void Province_Cmbbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object selectedItem = Province_Cmbbox.SelectedValue;
+            if (selectedItem != null)
+            {
+                List<TB_M_Region> RegionList = iRegion.GetList(Convert.ToInt16(selectedItem));
+                City_Cmbbox.ItemsSource = RegionList;
+
+            }
+        }
+
+        private void SubCity_Cmbbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            object selectedItem = SubCity_Cmbbox.SelectedValue;
+            if (selectedItem != null)
+            {
+                List<TB_M_Village> VillageList = iVillage.GetList(Convert.ToInt16(selectedItem));
+                Village_Cmbbox.ItemsSource = VillageList;
+            }
         }
     }
 }

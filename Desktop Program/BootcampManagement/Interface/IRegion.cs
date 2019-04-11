@@ -10,6 +10,7 @@ namespace BootcampManagement.Interface
     interface IRegion
     {
         List<TB_M_Region> Get();
+        List<TB_M_Region> GetList(int id);
         TB_M_Region Get(int id);
         bool Insert(TB_M_Region item);
         bool Update(int id, TB_M_Region item);
