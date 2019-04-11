@@ -62,7 +62,7 @@ namespace BootcampManagement
                 var username = UsernameLogin_Tbox.Text;
                 var password = PasswordLogin_Pbox.Password;
                 var hashedPassword = getMD5Hash(md5Hash, password);
-                var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username || x.Password == hashedPassword);
+                var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username && x.Password == hashedPassword);
                 if (getAccount == null)
                 {
                     MessageBox.Show("Invalid Username or Password");
