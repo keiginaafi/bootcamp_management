@@ -34,8 +34,10 @@ namespace BootcampManagement.Controller
         public bool Insert(TB_M_User item)
         {
             myContext.TB_M_Users.Add(item);
-            return saveData(myContext);
+            //return saveData(myContext);
             //throw new NotImplementedException();
+            var result = (myContext.SaveChanges());
+            return true;
         }
 
         public bool Update(int id, TB_M_User item)

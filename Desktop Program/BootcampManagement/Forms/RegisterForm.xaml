@@ -37,34 +37,42 @@
                 <TextBlock TextWrapping="Wrap" Text="Last Name :" Margin="229,20,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <TextBox x:Name="FirstName_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
-                <TextBox x:Name="LastName_Tbox" HorizontalAlignment="Left" Height="23" Margin="60,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <TextBox x:Name="FirstName_Tbox" HorizontalAlignment="Left" Height="25" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <TextBox x:Name="LastName_Tbox"  HorizontalAlignment="Left" Height="25" Margin="60,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Date of Birth :" Margin="30,5,30,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <DatePicker HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <DatePicker x:Name="DateOfBirth_Dtp" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Status :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <ComboBox x:Name="Status_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <ComboBox x:Name="Status_Cmbbox" materialDesign:HintAssist.Hint="-Select Status-" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light">
+                    <ComboBoxItem>Single</ComboBoxItem>
+                    <ComboBoxItem>Married</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Gender :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <ComboBox x:Name="Gender_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <ComboBox x:Name="Gender_Cmbbox" materialDesign:HintAssist.Hint="-Select Gender-" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light">
+                    <ComboBoxItem>Male</ComboBoxItem>
+                    <ComboBoxItem>Female</ComboBoxItem>
+                    <ComboBoxItem>Other</ComboBoxItem>
+                </ComboBox>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Religion :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
                 <ComboBox x:Name="Religion_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
                           ItemsSource="{Binding Source= ReligionList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          materialDesign:HintAssist.Hint="-Select Religion-"
                           />
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <TextBox x:Name="Email_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
+                <TextBox x:Name="Email_Tbox" HorizontalAlignment="Left" Height="25" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Contact :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <TextBox x:Name="Contact_Tbox" HorizontalAlignment="Left" Height="23" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
+                <TextBox x:Name="Contact_Tbox" HorizontalAlignment="Left" Height="25" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Street Address :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
@@ -78,10 +86,12 @@
                 <ComboBox x:Name="Province_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
                           ItemsSource="{Binding Source= ProvinceList}" DisplayMemberPath="Name" SelectedValuePath="id"
                           SelectionChanged="Province_Cmbbox_SelectionChanged"
+                          materialDesign:HintAssist.Hint="-Select Province-"
                           />
                 <ComboBox x:Name="City_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
                           ItemsSource="{Binding Source= RegionList}" DisplayMemberPath="Name" SelectedValuePath="id"
                           SelectionChanged="City_Cmbbox_SelectionChanged"
+                          materialDesign:HintAssist.Hint="-Select City-"
                           />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -92,9 +102,11 @@
                 <ComboBox x:Name="SubCity_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
                           ItemsSource="{Binding Source= SubCityList}" DisplayMemberPath="Name" SelectedValuePath="id"
                           SelectionChanged="SubCity_Cmbbox_SelectionChanged"
+                          materialDesign:HintAssist.Hint="-Select Sub-City-"
                           />
                 <ComboBox x:Name="Village_Cmbbox" HorizontalAlignment="Left" Margin="60,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
                           ItemsSource="{Binding Source= VillageList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          materialDesign:HintAssist.Hint="-Select Village-"
                           />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -114,7 +126,7 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="55,20,35,25" VerticalAlignment="Top" HorizontalAlignment="Right">
                 <Button x:Name="Cancel_Btn" Content="Cancel" Width="100" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Margin="0,0,25,0"/>
-                <Button x:Name="Register_Btn" Content="Register" Width="100" Height="35" FontFamily="Yu Gothic UI Light"/>
+                <Button x:Name="Register_Btn" Content="Register" Width="100" Height="35" FontFamily="Yu Gothic UI Light" Click="Register_Btn_Click"/>
             </StackPanel>
             <StackPanel>
                 <Line X1="0" Y1="0" X2="650" Y2="0" Stroke="#000066" StrokeThickness="4"/>

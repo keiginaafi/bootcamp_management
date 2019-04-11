@@ -9,7 +9,7 @@ using BootcampManagement.Model;
 
 namespace BootcampManagement.Controller
 {
-    class ReligionController : SaveData, IReligion
+    class AccountController : SaveData, IAccount
     {
         MyContext myContext = new MyContext();
         public bool Delete(int id)
@@ -17,26 +17,28 @@ namespace BootcampManagement.Controller
             throw new NotImplementedException();
         }
 
-        public List<TB_M_Religion> Get()
+        public List<TB_M_Account> Get()
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Religions.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.TB_M_Accounts.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
-        public TB_M_Religion Get(int id)
+        public TB_M_Account Get(int id)
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Religions.Find(id);
+            var get = myContext.TB_M_Accounts.Find(id);
             return get;
         }
 
-        public bool Insert(TB_M_Religion religion)
+        public bool Insert(TB_M_Account account)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            myContext.TB_M_Accounts.Add(account);
+            return saveData(myContext);
         }
 
-        public bool Update(int id, TB_M_Province religion)
+        public bool Update(int id, TB_M_Account account)
         {
             throw new NotImplementedException();
         }

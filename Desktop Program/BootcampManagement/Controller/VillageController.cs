@@ -26,7 +26,9 @@ namespace BootcampManagement.Controller
 
         public TB_M_Village Get(int id)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            var get = myContext.TB_M_Villages.Find(id);
+            return get;
         }
 
         public List<TB_M_Village> GetList(int id)
