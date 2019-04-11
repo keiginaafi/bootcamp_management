@@ -32,3 +32,6 @@ E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Pro
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.almost_all_migration_and_fixed_region_districtv2.resources
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.AddNameAndFKTBRegion.resources
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.RenameTBRegionToDistrict.resources
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
