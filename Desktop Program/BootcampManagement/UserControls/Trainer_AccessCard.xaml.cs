@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace BootcampManagement.UserControls
 {
     /// <summary>
-    /// Interaction logic for DashboardUserControl.xaml
+    /// Interaction logic for Trainer_AccessCard.xaml
     /// </summary>
-    public partial class DashboardUserControl : UserControl
+    public partial class Trainer_AccessCard : UserControl
     {
-        public DashboardUserControl()
+        public Trainer_AccessCard()
         {
             InitializeComponent();
         }

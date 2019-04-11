@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace BootcampManagement.UserControls
 {
     /// <summary>
-    /// Interaction logic for CreateCVUserControl.xaml
+    /// Interaction logic for Trainer_Lesson.xaml
     /// </summary>
-    public partial class CreateCVUserControl : UserControl
+    public partial class Trainer_Lesson : UserControl
     {
-        public CreateCVUserControl()
+        public Trainer_Lesson()
         {
             InitializeComponent();
         }

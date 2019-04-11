@@ -74,12 +74,16 @@
     </ApplicationDefinition>
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\CvController.cs" />
+    <Compile Include="Controller\OrganizationController.cs" />
     <Compile Include="Controller\ReligionController.cs" />
     <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
     <Compile Include="Controller\DistrictController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\VillageController.cs" />
+    <Compile Include="Forms\AddTraining.xaml.cs">
+      <DependentUpon>AddTraining.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
@@ -88,6 +92,7 @@
     </Compile>
     <Compile Include="Interface\IAccount.cs" />
     <Compile Include="Interface\ICv.cs" />
+    <Compile Include="Interface\IOrganization.cs" />
     <Compile Include="Interface\IReligion.cs" />
     <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
@@ -96,6 +101,10 @@
     <Compile Include="Migrations\201904110757460_add_model_programming_language.cs" />
     <Compile Include="Migrations\201904110757460_add_model_programming_language.Designer.cs">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904110847320_add_column_name_to_organization.cs" />
+    <Compile Include="Migrations\201904110847320_add_column_name_to_organization.Designer.cs">
+      <DependentUpon>201904110847320_add_column_name_to_organization.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904110828546_update-typedata.cs" />
     <Compile Include="Migrations\201904110828546_update-typedata.Designer.cs">
@@ -112,6 +121,10 @@
     <Compile Include="Migrations\201904111313477_fixerrordebugg.cs" />
     <Compile Include="Migrations\201904111313477_fixerrordebugg.Designer.cs">
       <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904111340564_typedata_migration.cs" />
+    <Compile Include="Migrations\201904111340564_typedata_migration.Designer.cs">
+      <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_AccessCard.cs" />
@@ -157,12 +170,34 @@
     <Compile Include="Model\TB_T_WeeklyScore.cs" />
     <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
-    <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
-      <DependentUpon>CreateCVUserControl.xaml</DependentUpon>
+    <Compile Include="UserControls\Trainer_AccessCard.xaml.cs">
+      <DependentUpon>Trainer_AccessCard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\DashboardUserControl.xaml.cs">
-      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
+    <Compile Include="UserControls\Trainer_DailyScore.xaml.cs">
+      <DependentUpon>Trainer_DailyScore.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Trainer_Lesson.xaml.cs">
+      <DependentUpon>Trainer_Lesson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trainer_Locker.xaml.cs">
+      <DependentUpon>Trainer_Locker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trainer_Site.xaml.cs">
+      <DependentUpon>Trainer_Site.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trainer_WeeklyScore.xaml.cs">
+      <DependentUpon>Trainer_WeeklyScore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\User_CreateCV.xaml.cs">
+      <DependentUpon>User_CreateCV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\User_Dashboard.xaml.cs">
+      <DependentUpon>User_Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Forms\AddTraining.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -183,11 +218,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\CreateCVUserControl.xaml">
+    <Page Include="UserControls\Trainer_AccessCard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\DashboardUserControl.xaml">
+    <Page Include="UserControls\Trainer_DailyScore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_Lesson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_Locker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_Site.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_WeeklyScore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\User_CreateCV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\User_Dashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,6 +276,9 @@
     <EmbeddedResource Include="Migrations\201904110757460_add_model_programming_language.resx">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110847320_add_column_name_to_organization.resx">
+      <DependentUpon>201904110847320_add_column_name_to_organization.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110828546_update-typedata.resx">
       <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904111313477_fixerrordebugg.resx">
       <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904111340564_typedata_migration.resx">
+      <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
