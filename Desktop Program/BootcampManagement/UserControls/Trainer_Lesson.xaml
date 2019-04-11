@@ -8,6 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="690" d:DesignWidth="850">
     <Grid Margin="0,25,0,0">
+        <TextBox x:Name="Id_Tbox" Visibility="Hidden"></TextBox>
         <StackPanel>
             <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" Text="Manage Lesson" HorizontalAlignment="Center" FontSize="25" FontFamily="Yu Gothic UI Bold"/>
         </StackPanel>

@@ -24,5 +24,6 @@ namespace BootcampManagement.UserControls
         {
             InitializeComponent();
         }
+
     }
 }

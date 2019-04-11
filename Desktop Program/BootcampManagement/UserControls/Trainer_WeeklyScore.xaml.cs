@@ -1,5 +1,4 @@
-﻿using BootcampManagement.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,19 +16,13 @@ using System.Windows.Shapes;
 namespace BootcampManagement.UserControls
 {
     /// <summary>
-    /// Interaction logic for User_CreateCV.xaml
+    /// Interaction logic for Trainer_WeeklyScore.xaml
     /// </summary>
-    public partial class User_CreateCV : UserControl
+    public partial class Trainer_WeeklyScore : UserControl
     {
-        public User_CreateCV()
+        public Trainer_WeeklyScore()
         {
             InitializeComponent();
-        }
-
-        private void AddTraining_Btn_Click(object sender, RoutedEventArgs e)
-        {
-            AddTraining train = new AddTraining();
-            train.Show();
         }
     }
 }

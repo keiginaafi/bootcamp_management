@@ -160,14 +160,23 @@
     <Compile Include="Model\TB_T_WeeklyScore.cs" />
     <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
+    <Compile Include="UserControls\Trainer_AccessCard.xaml.cs">
+      <DependentUpon>Trainer_AccessCard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Trainer_DailyScore.xaml.cs">
       <DependentUpon>Trainer_DailyScore.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Trainer_Lesson.xaml.cs">
       <DependentUpon>Trainer_Lesson.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Trainer_Locker.xaml.cs">
+      <DependentUpon>Trainer_Locker.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Trainer_Site.xaml.cs">
       <DependentUpon>Trainer_Site.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Trainer_WeeklyScore.xaml.cs">
+      <DependentUpon>Trainer_WeeklyScore.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\User_CreateCV.xaml.cs">
       <DependentUpon>User_CreateCV.xaml</DependentUpon>
@@ -199,6 +208,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\Trainer_AccessCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\Trainer_DailyScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -207,7 +220,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\Trainer_Locker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\Trainer_Site.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_WeeklyScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

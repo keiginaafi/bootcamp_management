@@ -1,8 +1,15 @@
 ﻿
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\App.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\Forms\AddTraining.xaml;;
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\Forms\LoginForm.xaml;;
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\Forms\Dashboard.xaml;;
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\Forms\RegisterForm.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_DailyScore.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_Lesson.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_Site.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_WeeklyScore.xaml;;
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\User_CreateCV.xaml;;
 FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\User_Dashboard.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_AccessCard.xaml;;
+FC:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\UserControls\Trainer_Locker.xaml;;
 

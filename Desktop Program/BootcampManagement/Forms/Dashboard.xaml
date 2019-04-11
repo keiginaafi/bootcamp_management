@@ -70,11 +70,11 @@
                             </BulletDecorator>
                         </Expander.Header>
                         <StackPanel Orientation="Vertical" TextBlock.Foreground="White" Margin="8,0,0,0" Width="285">
-                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand" >
+                            <StackPanel x:Name="DailyScore_LView" Orientation="Horizontal" Height="40" Cursor="Hand" MouseDown="DailyScore_LView_MouseDown">
                                 <materialDesign:PackIcon Kind="EventTick" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
                                 <TextBlock x:Name="DailyScore_Txt" Text="Daily Score" VerticalAlignment="Center"/>
                             </StackPanel>
-                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand">
+                            <StackPanel x:Name="WeeklyScore_LView" Orientation="Horizontal" Height="40" Cursor="Hand" MouseDown="WeeklyScore_LView_MouseDown">
                                 <materialDesign:PackIcon Kind="EventStar" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
                                 <TextBlock x:Name="WeeklyScore_Txt" Text="Weekly Score" VerticalAlignment="Center"/>
                             </StackPanel>
