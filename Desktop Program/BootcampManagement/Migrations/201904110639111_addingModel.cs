@@ -22,48 +22,7 @@ namespace BootcampManagement.Migrations
                     })
                 .PrimaryKey(t => t.id);
             
-            CreateTable(
-                "dbo.TB_M_Account",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Username = c.String(),
-                        Password = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Roles_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Role", t => t.TB_M_Roles_id)
-                .Index(t => t.TB_M_Roles_id);
             
-            CreateTable(
-                "dbo.TB_M_Role",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Application",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
             
             CreateTable(
                 "dbo.TB_M_Batch",
@@ -119,103 +78,6 @@ namespace BootcampManagement.Migrations
                     })
                 .PrimaryKey(t => t.id);
             
-            CreateTable(
-                "dbo.TB_M_User",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        First_name = c.String(),
-                        Last_name = c.String(),
-                        Date_of_birth = c.DateTime(nullable: false),
-                        IsMarried = c.Boolean(nullable: false),
-                        Email = c.String(),
-                        Contact = c.String(),
-                        Street_address = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Religions_id = c.Int(),
-                        TB_M_Villages_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Religion", t => t.TB_M_Religions_id)
-                .ForeignKey("dbo.TB_M_Village", t => t.TB_M_Villages_id)
-                .Index(t => t.TB_M_Religions_id)
-                .Index(t => t.TB_M_Villages_id);
-            
-            CreateTable(
-                "dbo.TB_M_Religion",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Village",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Districts_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_District", t => t.TB_M_Districts_id)
-                .Index(t => t.TB_M_Districts_id);
-            
-            CreateTable(
-                "dbo.TB_M_District",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Provinces_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Province", t => t.TB_M_Provinces_id)
-                .Index(t => t.TB_M_Provinces_id);
-            
-            CreateTable(
-                "dbo.TB_M_Province",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_T_CV",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Users_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_User", t => t.TB_M_Users_id)
-                .Index(t => t.TB_M_Users_id);
             
             CreateTable(
                 "dbo.TB_M_Class",
@@ -230,100 +92,7 @@ namespace BootcampManagement.Migrations
                     })
                 .PrimaryKey(t => t.id);
             
-            CreateTable(
-                "dbo.TB_M_Department",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Employee",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        First_name = c.String(),
-                        Last_name = c.String(),
-                        Email = c.String(),
-                        Contact = c.String(),
-                        Date_of_birth = c.DateTime(nullable: false),
-                        IsMarried = c.Boolean(nullable: false),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Religions_id = c.Int(),
-                        TB_M_Villages_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Religion", t => t.TB_M_Religions_id)
-                .ForeignKey("dbo.TB_M_Village", t => t.TB_M_Villages_id)
-                .Index(t => t.TB_M_Religions_id)
-                .Index(t => t.TB_M_Villages_id);
-            
-            CreateTable(
-                "dbo.TB_M_Experience",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Company_Name = c.String(),
-                        Description = c.String(),
-                        End_year = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Faculty",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Universities_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_University", t => t.TB_M_Universities_id)
-                .Index(t => t.TB_M_Universities_id);
-            
-            CreateTable(
-                "dbo.TB_M_University",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Language",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
+           
             CreateTable(
                 "dbo.TB_M_Lesson",
                 c => new
@@ -339,47 +108,7 @@ namespace BootcampManagement.Migrations
                     })
                 .PrimaryKey(t => t.id);
             
-            CreateTable(
-                "dbo.TB_M_Major",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Faculties_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Faculty", t => t.TB_M_Faculties_id)
-                .Index(t => t.TB_M_Faculties_id);
             
-            CreateTable(
-                "dbo.TB_M_OperatingSystem",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_M_Organization",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
             
             CreateTable(
                 "dbo.TB_M_Room",
@@ -413,53 +142,6 @@ namespace BootcampManagement.Migrations
                 .ForeignKey("dbo.TB_M_BootcampMember", t => t.TB_M_BootcampMembers_id)
                 .Index(t => t.TB_M_BootcampMembers_id);
             
-            CreateTable(
-                "dbo.TB_M_Sub_District",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Districts_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_District", t => t.TB_M_Districts_id)
-                .Index(t => t.TB_M_Districts_id);
-            
-            CreateTable(
-                "dbo.TB_M_Trainer",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Employees_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Employee", t => t.TB_M_Employees_id)
-                .Index(t => t.TB_M_Employees_id);
-            
-            CreateTable(
-                "dbo.TB_M_WorkAssignment",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Job_desk = c.String(),
-                        Project_specification = c.String(),
-                        Start_date = c.DateTime(nullable: false),
-                        End_date = c.DateTime(nullable: false),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
             
             CreateTable(
                 "dbo.TB_R_Grade",
@@ -508,23 +190,6 @@ namespace BootcampManagement.Migrations
                     })
                 .PrimaryKey(t => t.id);
             
-            CreateTable(
-                "dbo.TB_T_Application",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Applications_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Application", t => t.TB_M_Applications_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Applications_id)
-                .Index(t => t.TB_T_CVs_id);
             
             CreateTable(
                 "dbo.TB_T_Class",
@@ -553,146 +218,7 @@ namespace BootcampManagement.Migrations
                 .Index(t => t.TB_M_Rooms_id)
                 .Index(t => t.TB_M_Trainers_id);
             
-            CreateTable(
-                "dbo.TB_T_Education",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Graduation_Year = c.String(),
-                        GPA = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Majors_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Major", t => t.TB_M_Majors_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Majors_id)
-                .Index(t => t.TB_T_CVs_id);
             
-            CreateTable(
-                "dbo.TB_T_Experiences",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Experiences_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Experience", t => t.TB_M_Experiences_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Experiences_id)
-                .Index(t => t.TB_T_CVs_id);
-            
-            CreateTable(
-                "dbo.TB_T_Language",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Languages_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Language", t => t.TB_M_Languages_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Languages_id)
-                .Index(t => t.TB_T_CVs_id);
-            
-            CreateTable(
-                "dbo.TB_T_OperatingSystem",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_OperatingSystems_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_OperatingSystem", t => t.TB_M_OperatingSystems_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_OperatingSystems_id)
-                .Index(t => t.TB_T_CVs_id);
-            
-            CreateTable(
-                "dbo.TB_T_Organization",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Organizations_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Organization", t => t.TB_M_Organizations_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Organizations_id)
-                .Index(t => t.TB_T_CVs_id);
-            
-            CreateTable(
-                "dbo.TB_T_Training",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_Training_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_Training", t => t.TB_M_Training_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_Training_id)
-                .Index(t => t.TB_T_CVs_id);
-            
-            CreateTable(
-                "dbo.TB_M_Training",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                    })
-                .PrimaryKey(t => t.id);
-            
-            CreateTable(
-                "dbo.TB_T_WorkAssignment",
-                c => new
-                    {
-                        id = c.Int(nullable: false, identity: true),
-                        IsDelete = c.Boolean(nullable: false),
-                        CreateDate = c.DateTime(nullable: false),
-                        EditDate = c.DateTime(),
-                        DeleteDate = c.DateTime(),
-                        TB_M_WorkAssignments_id = c.Int(),
-                        TB_T_CVs_id = c.Int(),
-                    })
-                .PrimaryKey(t => t.id)
-                .ForeignKey("dbo.TB_M_WorkAssignment", t => t.TB_M_WorkAssignments_id)
-                .ForeignKey("dbo.TB_T_CV", t => t.TB_T_CVs_id)
-                .Index(t => t.TB_M_WorkAssignments_id)
-                .Index(t => t.TB_T_CVs_id);
             
         }
         

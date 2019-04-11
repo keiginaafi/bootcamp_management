@@ -26,7 +26,7 @@ namespace BootcampManagement
         public DbSet<TB_M_Employee> TB_M_Employees { get; set; }
         public DbSet<TB_M_Department> TB_M_Departments { get; set; }
         public DbSet<TB_M_Trainer> TB_M_Trainers { get; set; }
-        public DbSet<TB_T_CV> TB_M_CVs { get; set; }
+        public DbSet<TB_T_CV> TB_T_CVs { get; set; }
         public DbSet<TB_T_Education> TB_T_Educations { get; set; }
         public DbSet<TB_M_University> TB_M_Universities { get; set; }
         public DbSet<TB_M_Faculty> TB_M_Faculties { get; set; }
@@ -43,7 +43,12 @@ namespace BootcampManagement
         public DbSet<TB_T_WorkAssignment> TB_T_WorkAssignments { get; set; }
         public DbSet<TB_M_OperatingSystem> TB_M_OperatingSystems { get; set; }
         public DbSet<TB_T_OperatingSystem> TB_T_OperatingSystems { get; set; }
+        public DbSet<TB_M_Training> TB_M_Trainings { get; set; }
         public DbSet<TB_T_Training> TB_T_Trainings { get; set; }
+        public DbSet<TB_M_DevelopmentTool> TB_M_DevelopmentTools { get; set; }
+        public DbSet<TB_T_DevelopmentTool> TB_T_DevelopmentTools { get; set; }
+        public DbSet<TB_M_ProgrammingLanguage> TB_M_ProgrammingLanguages { get; set; }
+        public DbSet<TB_T_ProgrammingLanguage> TB_T_ProgrammingLanguages { get; set; }
         public DbSet<TB_M_Room> TB_M_Rooms { get; set; }
         public DbSet<TB_M_Batch> TB_M_Batchs { get; set; }
         public DbSet<TB_M_Class> TB_M_Classs { get; set; }
