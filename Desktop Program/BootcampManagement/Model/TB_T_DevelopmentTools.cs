@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BootcampManagement.Model
 {
-    class TB_T_DevelopmentTools : BaseModel
+    class TB_T_DevelopmentTool : BaseModel
     {
         public virtual TB_M_DevelopmentTool TB_M_DevelopmentTools { get; set; }
         public virtual TB_T_CV TB_T_CVs { get; set; }

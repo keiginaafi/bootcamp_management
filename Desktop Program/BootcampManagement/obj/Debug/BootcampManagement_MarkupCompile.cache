@@ -4,16 +4,21 @@
 winexe
 C#
 .cs
-E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
 BootcampManagement
 none
 false
 DEBUG;TRACE
-E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
+C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
 5-1669813531
 
+<<<<<<< HEAD
 731295940636
 18679364465
+=======
+782042357914
+18-1929701126
+>>>>>>> 38871b90125d4876b430664492bd0c6d15259d1b
 Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;UserControls\CreateCVUserControl.xaml;UserControls\DashboardUserControl.xaml;
 
 False

@@ -72,7 +72,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
     <Compile Include="Controller\AccountController.cs" />
+=======
+    <Compile Include="Controller\CvController.cs" />
+>>>>>>> 38871b90125d4876b430664492bd0c6d15259d1b
     <Compile Include="Controller\ReligionController.cs" />
     <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
@@ -85,27 +89,23 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Interface\IAccount.cs" />
+=======
+    <Compile Include="Interface\ICv.cs" />
+>>>>>>> 38871b90125d4876b430664492bd0c6d15259d1b
     <Compile Include="Interface\IReligion.cs" />
     <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
     <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IVillage.cs" />
-    <Compile Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.cs" />
-    <Compile Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.Designer.cs">
-      <DependentUpon>201904110414201_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
+    <Compile Include="Migrations\201904110639111_addingModel.cs" />
+    <Compile Include="Migrations\201904110639111_addingModel.Designer.cs">
+      <DependentUpon>201904110639111_addingModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.cs" />
-    <Compile Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.Designer.cs">
-      <DependentUpon>201904110426284_almost_all_migration_and_fixed_region_districtv2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904110437522_AddNameAndFKTBRegion.cs" />
-    <Compile Include="Migrations\201904110437522_AddNameAndFKTBRegion.Designer.cs">
-      <DependentUpon>201904110437522_AddNameAndFKTBRegion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.cs" />
-    <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.Designer.cs">
-      <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
+    <Compile Include="Migrations\201904110757460_add_model_programming_language.cs" />
+    <Compile Include="Migrations\201904110757460_add_model_programming_language.Designer.cs">
+      <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201904110828546_update-typedata.cs" />
     <Compile Include="Migrations\201904110828546_update-typedata.Designer.cs">
@@ -120,32 +120,47 @@
       <DependentUpon>201904110911379_update-typedata-Datebasemodel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\TB_M_AccessCard.cs" />
     <Compile Include="Model\TB_M_Account.cs" />
     <Compile Include="Model\TB_M_Application.cs" />
+    <Compile Include="Model\TB_M_Batch.cs" />
+    <Compile Include="Model\TB_M_BootcampMember.cs" />
+    <Compile Include="Model\TB_M_Class.cs" />
     <Compile Include="Model\TB_M_Department.cs" />
     <Compile Include="Model\TB_M_DevelopmentTool.cs" />
     <Compile Include="Model\TB_M_Employee.cs" />
     <Compile Include="Model\TB_M_Experience.cs" />
     <Compile Include="Model\TB_M_Faculty.cs" />
     <Compile Include="Model\TB_M_Language.cs" />
+    <Compile Include="Model\TB_M_Lesson.cs" />
+    <Compile Include="Model\TB_M_Locker.cs" />
     <Compile Include="Model\TB_M_Major.cs" />
     <Compile Include="Model\TB_M_OperatingSystem.cs" />
     <Compile Include="Model\TB_M_Organization.cs" />
     <Compile Include="Model\TB_M_District.cs" />
+    <Compile Include="Model\TB_M_ProgrammingLanguage.cs" />
     <Compile Include="Model\TB_M_Role.cs" />
+    <Compile Include="Model\TB_M_Room.cs" />
+    <Compile Include="Model\TB_M_Site.cs" />
     <Compile Include="Model\TB_M_Trainer.cs" />
     <Compile Include="Model\TB_M_Training.cs" />
     <Compile Include="Model\TB_M_University.cs" />
     <Compile Include="Model\TB_M_WorkAssignment.cs" />
+    <Compile Include="Model\TB_R_Grade.cs" />
     <Compile Include="Model\TB_T_Application.cs" />
+    <Compile Include="Model\TB_T_Class.cs" />
     <Compile Include="Model\TB_T_CV.cs" />
+    <Compile Include="Model\TB_T_DailyScore.cs" />
     <Compile Include="Model\TB_T_DevelopmentTools.cs" />
     <Compile Include="Model\TB_T_Education.cs" />
     <Compile Include="Model\TB_T_Experiences.cs" />
     <Compile Include="Model\TB_T_Language.cs" />
     <Compile Include="Model\TB_T_OperatingSystem.cs" />
     <Compile Include="Model\TB_T_Organization.cs" />
+    <Compile Include="Model\TB_T_ProgrammingLanguage.cs" />
+    <Compile Include="Model\TB_T_Site.cs" />
     <Compile Include="Model\TB_T_Training.cs" />
+    <Compile Include="Model\TB_T_WeeklyScore.cs" />
     <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
     <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
@@ -205,17 +220,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.resx">
-      <DependentUpon>201904110414201_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110639111_addingModel.resx">
+      <DependentUpon>201904110639111_addingModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.resx">
-      <DependentUpon>201904110426284_almost_all_migration_and_fixed_region_districtv2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904110437522_AddNameAndFKTBRegion.resx">
-      <DependentUpon>201904110437522_AddNameAndFKTBRegion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904110439565_RenameTBRegionToDistrict.resx">
-      <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110757460_add_model_programming_language.resx">
+      <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110828546_update-typedata.resx">
       <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
