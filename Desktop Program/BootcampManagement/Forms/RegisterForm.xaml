@@ -54,7 +54,9 @@
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Religion :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <ComboBox x:Name="Religion_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"/>
+                <ComboBox x:Name="Religion_Cmbbox" HorizontalAlignment="Left" Margin="30,5,0,0" VerticalAlignment="Top" Width="255" FontFamily="Yu Gothic UI Light"
+                          ItemsSource="{Binding Source= ReligionList}" DisplayMemberPath="Name" SelectedValuePath="id"
+                          />
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>

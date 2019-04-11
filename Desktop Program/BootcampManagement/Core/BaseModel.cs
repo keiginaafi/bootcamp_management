@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BootcampManagement.Model
 {
-    class BaseModel
+    public class BaseModel
     {
         [Key]
         public int id { get; set; }

@@ -23,16 +23,22 @@ namespace BootcampManagement
     public partial class RegisterForm : Window
     {
         IProvince iProvince = new ProvinceController();
-        IRegion iRegion = new RegionController();
+        ISubDistrict iSubDistrict = new SubDistrictController();
         IDistrict iDistrict = new DistrictController();
         IVillage iVillage = new VillageController();
+        IReligion iReligion = new ReligionController();
         MyContext myContext = new MyContext();
 
         public RegisterForm()
         {
             InitializeComponent();
+            //ComboBoxProvince
             List<TB_M_Province> ProvinceList = iProvince.Get();
             Province_Cmbbox.ItemsSource = ProvinceList;
+
+            //ComboBoxReligion
+            List<TB_M_Religion> ReligionList = iReligion.Get();
+            Religion_Cmbbox.ItemsSource = ReligionList;
         }
 
         private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
@@ -50,7 +56,7 @@ namespace BootcampManagement
             object selectedItem = City_Cmbbox.SelectedValue;
             if (selectedItem != null)
             {
-                List<TB_M_District> SubCityList = iDistrict.GetList(Convert.ToInt16(selectedItem));
+                List<TB_M_Sub_District> SubCityList = iSubDistrict.GetList(Convert.ToInt16(selectedItem));
                 SubCity_Cmbbox.ItemsSource = SubCityList;
 
             }
@@ -61,7 +67,7 @@ namespace BootcampManagement
             object selectedItem = Province_Cmbbox.SelectedValue;
             if (selectedItem != null)
             {
-                List<TB_M_Region> RegionList = iRegion.GetList(Convert.ToInt16(selectedItem));
+                List<TB_M_District> RegionList = iDistrict.GetList(Convert.ToInt16(selectedItem));
                 City_Cmbbox.ItemsSource = RegionList;
 
             }

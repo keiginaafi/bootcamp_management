@@ -28,19 +28,16 @@ namespace BootcampManagement.Controller
         {
             throw new NotImplementedException();
         }
-
-<<<<<<< HEAD:Desktop Program/BootcampManagement/Controller/RegionController.cs
-        public List<TB_M_Region> GetList(int id)
+        public List<TB_M_Sub_District> GetList(int id)
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Regions.Where(x => x.TB_M_Provinces.id == id).ToList();
+            var get = myContext.TB_M_Sub_Districts.Where(x => x.TB_M_Districts.id == id).ToList();
             return get;
+
         }
 
-        public bool Insert(TB_M_Region item)
-=======
+        //public bool Insert(TB_M_Region item)
         public bool Insert(TB_M_Sub_District item)
->>>>>>> remotes/origin/master:Desktop Program/BootcampManagement/Controller/SubDistrictController.cs
         {
             throw new NotImplementedException();
         }

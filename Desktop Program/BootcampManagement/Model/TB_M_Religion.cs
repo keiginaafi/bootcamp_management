@@ -8,6 +8,6 @@ namespace BootcampManagement.Model
 {
     class TB_M_Religion : BaseModel
     {
-        public int Name { get; set; }
+        public string Name { get; set; }
     }
 }
