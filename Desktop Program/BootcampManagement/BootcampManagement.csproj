@@ -81,6 +81,9 @@
     <Compile Include="Controller\DistrictController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\VillageController.cs" />
+    <Compile Include="Forms\AddTraining.xaml.cs">
+      <DependentUpon>AddTraining.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.xaml.cs">
       <DependentUpon>LoginForm.xaml</DependentUpon>
     </Compile>
@@ -167,12 +170,25 @@
     <Compile Include="Model\TB_T_WeeklyScore.cs" />
     <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
-    <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
-      <DependentUpon>CreateCVUserControl.xaml</DependentUpon>
+    <Compile Include="UserControls\Trainer_DailyScore.xaml.cs">
+      <DependentUpon>Trainer_DailyScore.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\DashboardUserControl.xaml.cs">
-      <DependentUpon>DashboardUserControl.xaml</DependentUpon>
+    <Compile Include="UserControls\Trainer_Lesson.xaml.cs">
+      <DependentUpon>Trainer_Lesson.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Trainer_Site.xaml.cs">
+      <DependentUpon>Trainer_Site.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\User_CreateCV.xaml.cs">
+      <DependentUpon>User_CreateCV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\User_Dashboard.xaml.cs">
+      <DependentUpon>User_Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Forms\AddTraining.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Forms\LoginForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -193,11 +209,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\CreateCVUserControl.xaml">
+    <Page Include="UserControls\Trainer_DailyScore.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\DashboardUserControl.xaml">
+    <Page Include="UserControls\Trainer_Lesson.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Trainer_Site.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\User_CreateCV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\User_Dashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

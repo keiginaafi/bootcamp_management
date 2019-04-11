@@ -21,6 +21,8 @@ namespace BootcampManagement
     /// </summary>
     public partial class Dashboard : Window
     {
+        string role = "Trainer";
+
         public Dashboard()
         {
             InitializeComponent();
@@ -28,9 +30,23 @@ namespace BootcampManagement
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Main_Grid.Children.Clear();
-            Main_Grid.Children.Add(new DashboardUserControl());
-            Cursor_Grid.Visibility = Visibility.Collapsed;
+            if (role == "User")
+            {
+                Main_Grid.Children.Clear();
+                Main_Grid.Children.Add(new User_Dashboard());
+                ListViewItemThree.Visibility = Visibility.Collapsed;
+                ListViewItemFour.Visibility = Visibility.Collapsed;
+                ListViewItemFive.Visibility = Visibility.Collapsed;
+                ListViewItemSix.Visibility = Visibility.Collapsed;
+            }
+            else if (role == "Trainer")
+            {
+                Main_Grid.Children.Clear();
+                Main_Grid.Children.Add(new User_Dashboard());
+                ListTwo_Txt.Text = "Manage Locker";
+                ListTwo_Icon.Kind = MaterialDesignThemes.Wpf.PackIconKind.LockOpenOutline;
+                ListFive_Txt.Text = "Manage Score";
+            }
         }
 
         private void Close_Btn_Click(object sender, RoutedEventArgs e)
@@ -41,35 +57,46 @@ namespace BootcampManagement
         private void Menu_ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int index = Menu_ListView.SelectedIndex;
-            moveCursorMenu(index);
 
-            switch (index)
-            {
-                case 1:
-                    Main_Grid.Children.Clear();
-                    Main_Grid.Children.Add(new DashboardUserControl());
-                    break;
-                case 2:
-                    Main_Grid.Children.Clear();
-                    Main_Grid.Children.Add(new CreateCVUserControl());
-                    break;
-                default:
-                    break;
-            }
-        }
 
-        void moveCursorMenu(int index)
-        {
-            Slide_TransitionContent.OnApplyTemplate();
-            if (index == 0)
+            if (role == "User")
             {
-                Cursor_Grid.Visibility = Visibility.Collapsed;
+                switch (index)
+                {
+                    case 1:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new User_Dashboard());
+                        break;
+                    case 2:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new User_CreateCV());
+                        break;
+                    default:
+                        break;
+                }
             }
-            else
+            else if (role == "Trainer")
             {
-                Cursor_Grid.Visibility = Visibility.Visible;
-                Cursor_Grid.Margin = new Thickness(0, 100 + (50 * (index - 1)), 0, 0);
+                switch (index)
+                {
+                    case 1:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new User_Dashboard());
+                        break;
+                    case 4:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new Trainer_Lesson());
+                        break;
+                    case 6:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new Trainer_Site());
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
     }
 }
+
