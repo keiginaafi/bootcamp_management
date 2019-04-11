@@ -28,7 +28,7 @@
             </StackPanel>
         </StackPanel>
         <StackPanel Margin="0,370,0,0">
-            <DataGrid x:Name="WeeklyScore_DataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="250" Width="700" AutoGenerateColumns="False" Margin="34,0,34,0">
+            <DataGrid x:Name="AccessCard_DataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="250" Width="700" AutoGenerateColumns="False" Margin="34,0,34,0">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="No" Binding="{Binding Id}" Width="40" />
                     <DataGridTextColumn Header="Access Card Number" Binding="{Binding AccessCardNumber}" Width="120" />

@@ -78,10 +78,6 @@
                                 <materialDesign:PackIcon Kind="EventStar" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
                                 <TextBlock x:Name="WeeklyScore_Txt" Text="Weekly Score" VerticalAlignment="Center"/>
                             </StackPanel>
-                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand">
-                                <materialDesign:PackIcon Kind="FileDocumentBoxOutline" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
-                                <TextBlock x:Name="Grade_Txt" Text="Grade" VerticalAlignment="Center"/>
-                            </StackPanel>
                         </StackPanel>
                     </Expander>
                 </ListViewItem>
