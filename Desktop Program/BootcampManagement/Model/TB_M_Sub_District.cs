@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace BootcampManagement.Model
 {
-    class TB_M_District : BaseModel
+    class TB_M_Sub_District : BaseModel
     {
         public string Name { get; set; }
-        public virtual TB_M_Province TB_M_Provinces { get; set; }
+        public virtual TB_M_District TB_M_Districts { get; set; }
     }
 }

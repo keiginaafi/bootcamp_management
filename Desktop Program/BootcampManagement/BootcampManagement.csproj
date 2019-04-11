@@ -72,9 +72,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Controller\DistrictController.cs" />
+    <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
-    <Compile Include="Controller\RegionController.cs" />
+    <Compile Include="Controller\DistrictController.cs" />
     <Compile Include="Controller\UserController.cs" />
     <Compile Include="Controller\VillageController.cs" />
     <Compile Include="Forms\LoginForm.xaml.cs">
@@ -83,9 +83,9 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Interface\IDistrict.cs" />
+    <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
-    <Compile Include="Interface\IRegion.cs" />
+    <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IVillage.cs" />
     <Compile Include="Migrations\201904100817075_editNullableDeleteDate.cs" />
     <Compile Include="Migrations\201904100817075_editNullableDeleteDate.Designer.cs">
@@ -95,6 +95,40 @@
     <Compile Include="Migrations\201904100821191_editNullableUpdateDate.Designer.cs">
       <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.cs" />
+    <Compile Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.Designer.cs">
+      <DependentUpon>201904110247582_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904110303031_latest_migration.cs" />
+    <Compile Include="Migrations\201904110303031_latest_migration.Designer.cs">
+      <DependentUpon>201904110303031_latest_migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TB_M_Account.cs" />
+    <Compile Include="Model\TB_M_Application.cs" />
+    <Compile Include="Model\TB_M_Department.cs" />
+    <Compile Include="Model\TB_M_DevelopmentTool.cs" />
+    <Compile Include="Model\TB_M_Employee.cs" />
+    <Compile Include="Model\TB_M_Experience.cs" />
+    <Compile Include="Model\TB_M_Faculty.cs" />
+    <Compile Include="Model\TB_M_Language.cs" />
+    <Compile Include="Model\TB_M_Major.cs" />
+    <Compile Include="Model\TB_M_OperatingSystem.cs" />
+    <Compile Include="Model\TB_M_Organization.cs" />
+    <Compile Include="Model\TB_M_Role.cs" />
+    <Compile Include="Model\TB_M_Trainer.cs" />
+    <Compile Include="Model\TB_M_Training.cs" />
+    <Compile Include="Model\TB_M_University.cs" />
+    <Compile Include="Model\TB_M_WorkAssignment.cs" />
+    <Compile Include="Model\TB_T_Application.cs" />
+    <Compile Include="Model\TB_T_CV.cs" />
+    <Compile Include="Model\TB_T_DevelopmentTools.cs" />
+    <Compile Include="Model\TB_T_Education.cs" />
+    <Compile Include="Model\TB_T_Experiences.cs" />
+    <Compile Include="Model\TB_T_Language.cs" />
+    <Compile Include="Model\TB_T_OperatingSystem.cs" />
+    <Compile Include="Model\TB_T_Organization.cs" />
+    <Compile Include="Model\TB_T_Training.cs" />
+    <Compile Include="Model\TB_T_WorkAssignment.cs" />
     <Compile Include="Save\SaveData.cs" />
     <Compile Include="UserControls\CreateCVUserControl.xaml.cs">
       <DependentUpon>CreateCVUserControl.xaml</DependentUpon>
@@ -139,9 +173,9 @@
       <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\TB_M_District.cs" />
+    <Compile Include="Model\TB_M_Sub_District.cs" />
     <Compile Include="Model\TB_M_Province.cs" />
-    <Compile Include="Model\TB_M_Region.cs" />
+    <Compile Include="Model\TB_M_District.cs" />
     <Compile Include="Model\TB_M_Religion.cs" />
     <Compile Include="Model\TB_M_User.cs" />
     <Compile Include="Model\TB_M_Village.cs" />
@@ -167,6 +201,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904100821191_editNullableUpdateDate.resx">
       <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.resx">
+      <DependentUpon>201904110247582_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110303031_latest_migration.resx">
+      <DependentUpon>201904110303031_latest_migration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
