@@ -30,7 +30,7 @@
         </Grid>
         <Grid Height="750" Width="300" HorizontalAlignment="Left" Background="#1F2626">
             <materialDesign:TransitioningContent x:Name="Slide_TransitionContent" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
-                <Grid x:Name="Cursor_Grid" Width="10" HorizontalAlignment="Left" Height="70" Background="AliceBlue" VerticalAlignment="Top"/>
+                <Grid x:Name="Cursor_Grid" Width="10" HorizontalAlignment="Left" Height="50" Background="AliceBlue" VerticalAlignment="Top"/>
             </materialDesign:TransitioningContent>
             <ListView x:Name="Menu_ListView" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light" SelectionChanged="Menu_ListView_SelectionChanged">
                 <ListViewItem Height="100">

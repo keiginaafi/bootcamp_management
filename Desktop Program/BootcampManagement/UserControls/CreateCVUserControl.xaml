@@ -14,7 +14,7 @@
 
 
         <Rectangle HorizontalAlignment="Left" Height="125" Margin="38,63,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
-        <TextBlock TextWrapping="Wrap" Text="Education" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="54,55,716.6,614.6" Padding="10,0,10,0" Width="79"/>
+        <TextBlock TextWrapping="Wrap" Text="Education" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="30,55,740.6,614.6" Padding="10,0,10,0" Width="79"/>
         <StackPanel Orientation="Horizontal" Margin="75,80,0,0">
             <TextBlock TextWrapping="Wrap" Text="University :" FontSize="12" FontFamily="Yu Gothic UI Light" Margin="0,0,315,0"/>
             <TextBlock TextWrapping="Wrap" Text="Major :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
@@ -36,7 +36,7 @@
 
 
         <Rectangle HorizontalAlignment="Left" Height="68" Margin="38,205,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
-        <TextBlock TextWrapping="Wrap" Text="Organization" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="54,193,698.6,477.6" Padding="10,0,10,0" Width="97"/>
+        <TextBlock TextWrapping="Wrap" Text="Organization" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="30,193,722.6,477.6" Padding="10,0,10,0" Width="97"/>
         <StackPanel Orientation="Horizontal" Margin="75,215,0,0">
             <TextBlock TextWrapping="Wrap" Text="Organization Name :" FontSize="12" FontFamily="Yu Gothic UI Light" Margin="0,0,264,0"/>
             <TextBlock TextWrapping="Wrap" Text="Note :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
@@ -48,7 +48,7 @@
 
 
         <Rectangle HorizontalAlignment="Left" Height="120" Margin="38,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
-        <TextBlock TextWrapping="Wrap" Text="Experience" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="54,278,711.6,391.6" Padding="10,0,10,0" Width="84"/>
+        <TextBlock TextWrapping="Wrap" Text="Experience" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="30,278,735.6,391.6" Padding="10,0,10,0" Width="84"/>
         <StackPanel Margin="75,301,0,0">
             <TextBlock TextWrapping="Wrap" Text="Company Name :" FontSize="12" FontFamily="Yu Gothic UI Light" Margin="0,0,303,0"/>
             <TextBox x:Name="CompanyName_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" FontFamily="Yu Gothic UI Light"/>
@@ -66,7 +66,7 @@
 
 
         <Rectangle HorizontalAlignment="Left" Height="160" Margin="38,428,0,0" Stroke="Black" VerticalAlignment="Top" Width="768" RadiusX="10" RadiusY="10"/>
-        <TextBlock TextWrapping="Wrap" Text="Application &amp; Skill" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="54,417,666.6,253.6" Padding="10,0,10,0" Width="129"/>
+        <TextBlock TextWrapping="Wrap" Text="Application &amp; Skill" HorizontalAlignment="Center" FontSize="13" Background="White" FontFamily="Yu Gothic UI Bold" Margin="30,416,690.6,254.6" Padding="10,0,10,0" Width="129"/>
         <StackPanel Orientation="Horizontal" Margin="75,440,0,0">
             <TextBlock TextWrapping="Wrap" Text="Application :" FontSize="12" FontFamily="Yu Gothic UI Light" Margin="0,0,306,0"/>
             <TextBlock TextWrapping="Wrap" Text="Development Tool :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
@@ -88,9 +88,9 @@
         </StackPanel>
 
 
-        <StackPanel Orientation="Horizontal" Margin="55,590,44,25">
-            <StackPanel Orientation="Horizontal" Margin="0,0,327,0">
-                <TextBox x:Name="BrowsePhoto_Btn" materialDesign:HintAssist.Hint="Photo"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="80" Height="auto" Margin="0,20,20,20" />
+        <StackPanel Orientation="Horizontal" Margin="55,585,44,25">
+            <StackPanel Orientation="Horizontal" Margin="0,0,257,0">
+                <TextBox x:Name="BrowsePhoto_Btn" materialDesign:HintAssist.Hint="Photo"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="150" Height="35" Margin="0,20,20,20" />
                 <Button x:Name="Browse_Btn" Content="Browse" Width="100" Height="35" FontFamily="Yu Gothic UI Light" Background="#CCCCCC" BorderBrush="#CCCCCC" Foreground="Black"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -98,8 +98,8 @@
                 <Button x:Name="Save_Btn" Content="Save" Width="100" Height="35" FontFamily="Yu Gothic UI Light"/>
             </StackPanel>
         </StackPanel>
-        <StackPanel Margin="55,648,44,26">
-            <TextBlock TextWrapping="Wrap" Text="Size Max 200kb." FontSize="12" FontFamily="Yu Gothic UI Light" Foreground="#DA4B4B"/>
+        <StackPanel Margin="55,650,44,26">
+            <TextBlock TextWrapping="Wrap" Text="Size Max 200kb." FontSize="12" FontFamily="Yu Gothic UI Light" Foreground="#DA4B4B" Height="20" Margin="0,0,0.4,0"/>
         </StackPanel>
     </Grid>
 </UserControl>
