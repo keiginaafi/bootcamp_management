@@ -28,11 +28,8 @@
                 </Button>
             </StackPanel>
         </Grid>
-        <Grid Height="750" Width="300" HorizontalAlignment="Left" Background="#1F2626">
-            <materialDesign:TransitioningContent x:Name="Slide_TransitionContent" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
-                <Grid x:Name="Cursor_Grid" Width="10" HorizontalAlignment="Left" Height="50" Background="AliceBlue" VerticalAlignment="Top"/>
-            </materialDesign:TransitioningContent>
-            <ListView x:Name="Menu_ListView" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light" SelectionChanged="Menu_ListView_SelectionChanged">
+        <Grid Height="750" Width="300" HorizontalAlignment="Left" Background="#1F2626" >
+            <ListView x:Name="Menu_ListView" Foreground="WhiteSmoke" FontFamily="Yu Gothic UI Light" SelectionChanged="Menu_ListView_SelectionChanged" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListViewItem Height="100">
                     <StackPanel Orientation="Horizontal">
                         <Image x:Name="___BootcampManagement_component_metrodata_png" Source="/BootcampManagement;component/Image/metrodata.png" Stretch="Fill" Height="82" Width="244" Margin="20 0"/>
@@ -44,16 +41,65 @@
                         <TextBlock Text="Dashboard" VerticalAlignment="Center" FontSize="20"/>
                     </StackPanel>
                 </ListViewItem>
-                <ListViewItem Height="50">
+                <ListViewItem Height="50" x:Name="ListViewItemTwo">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="FileDocumentBox" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
-                        <TextBlock Text="Build Your CV" VerticalAlignment="Center" FontSize="20"/>
+                        <materialDesign:PackIcon Kind="FileDocumentBox" x:Name="ListTwo_Icon" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="ListTwo_Txt" Text="Build Your CV" VerticalAlignment="Center" FontSize="20"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="50" x:Name="ListViewItemThree">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ClipboardUser" x:Name="ListThree_Icon" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="ListThree_Txt" Text="Manage Access Card" VerticalAlignment="Center" FontSize="20"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem Height="50" x:Name="ListViewItemFour">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="LaptopWindows" x:Name="ListFour_Icon" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="ListFour_Txt" Text="Manage Lesson" VerticalAlignment="Center" FontSize="20"/>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="ListViewItemFive">
+                    <Expander Foreground="White" Background="Transparent" FontSize="20" Width="300" Margin="-8,-6,0,0">
+                        <Expander.Header>
+                            <BulletDecorator>
+                                <BulletDecorator.Bullet>
+                                    <materialDesign:PackIcon Kind="TableOfContents" x:Name="ListFive_Icon" Width="30" Height="30" Margin="14 0" VerticalAlignment="Center"/>
+                                </BulletDecorator.Bullet>
+                                <TextBlock x:Name="ListFive_Txt" Text="Build Your CV" VerticalAlignment="Center" FontSize="20" Margin="43.6,0,-27.2,0"/>
+                            </BulletDecorator>
+                        </Expander.Header>
+                        <StackPanel Orientation="Vertical" TextBlock.Foreground="White" Margin="8,0,0,0" Width="285">
+                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand" >
+                                <materialDesign:PackIcon Kind="EventTick" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="DailyScore_Txt" Text="Daily Score" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand">
+                                <materialDesign:PackIcon Kind="EventStar" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="WeeklyScore_Txt" Text="Weekly Score" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Height="40" Cursor="Hand">
+                                <materialDesign:PackIcon Kind="FileDocumentBoxOutline" Width="30" Height="30" Margin="45,0,30,0" VerticalAlignment="Center"/>
+                                <TextBlock x:Name="Grade_Txt" Text="Grade" VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Expander>
+                </ListViewItem>
+                <ListViewItem Height="50" x:Name="ListViewItemSix">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="OfficeBuilding" x:Name="ListSix_Icon" Width="30" Height="30" Margin="30 0" VerticalAlignment="Center"/>
+                        <TextBlock x:Name="ListSix_Txt" Text="Manage Site" VerticalAlignment="Center" FontSize="20"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>
         </Grid>
         <Grid>
-            <Grid x:Name="Main_Grid" VerticalAlignment="Top" Width="900" Height="700" Margin="300,50,0,0"></Grid>
+            <Grid x:Name="Main_Grid" VerticalAlignment="Top" Width="850" Height="700" Margin="300,50,0,0"></Grid>
+        </Grid>
+        <Grid>
+            <Button x:Name="FAQ_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" HorizontalAlignment="Center" ToolTip="FAQ" Margin="10,708,1148,10.4">
+                <materialDesign:PackIcon Kind="Information" Width="30" Height="30" Margin="-10" Foreground="White"/>
+            </Button>
         </Grid>
     </Grid>
 </Window>

@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="BootcampManagement.UserControls.Trainer_DailyScore"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BootcampManagement.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="690" d:DesignWidth="850">
+    <Grid Margin="0,25,0,0">
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Margin="0,10,0,0" Text="Daily Score" HorizontalAlignment="Center" FontSize="25" FontFamily="Yu Gothic UI Bold"/>
+        </StackPanel>
+        <StackPanel Margin="200,80,200,0">
+            <TextBlock TextWrapping="Wrap" Text="Name :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
+            <ComboBox x:Name="Name_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,15,0,10" VerticalAlignment="Top" Width="450" FontFamily="Yu Gothic UI Light"/>
+            <TextBlock TextWrapping="Wrap" Text="Score :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Score_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,15,0,10" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" FontFamily="Yu Gothic UI Light"/>
+            <TextBlock TextWrapping="Wrap" Text="Date :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Date_Tbox" HorizontalAlignment="Left" Height="23" Margin="0,15,0,10" TextWrapping="Wrap" VerticalAlignment="Top" Width="450sh" FontFamily="Yu Gothic UI Light"/>
+            <StackPanel Orientation="Horizontal" Margin="0,26,0,0" Height="33">
+                <Button x:Name="Insert_Btn" Content="Insert" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Height="30" FontFamily="Yu Gothic UI Light" Margin="0,0,27,0"/>
+                <Button x:Name="Update_Btn" Content="Update" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Height="30" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Margin="0,0,27,0"/>
+                <Button x:Name="Delete_Btn" Content="Delete" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Height="30" Background="#e74c3c" BorderBrush="#e74c3c" FontFamily="Yu Gothic UI Light"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="0,360,0,0">
+            <DataGrid x:Name="DailyScore_DataGrid" HorizontalAlignment="Center" VerticalAlignment="Top" Height="250" Width="600" AutoGenerateColumns="False" Margin="34,0,34,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="No" Binding="{Binding Id}" Width="40" />
+                    <DataGridTextColumn Header="Training Name" Binding="{Binding Name}" Width="*"/>
+                </DataGrid.Columns>
+                <DataGrid.ColumnHeaderStyle>
+                    <Style TargetType="{x:Type DataGridColumnHeader }">
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="Background" Value="Whitesmoke"/>
+                        <Setter Property="Height" Value="30"/>
+                        <Setter Property="Foreground" Value="Black"/>
+                    </Style>
+                </DataGrid.ColumnHeaderStyle>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

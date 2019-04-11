@@ -16,13 +16,19 @@ using System.Windows.Shapes;
 namespace BootcampManagement.UserControls
 {
     /// <summary>
-    /// Interaction logic for DashboardUserControl.xaml
+    /// Interaction logic for User_CreateCV.xaml
     /// </summary>
-    public partial class DashboardUserControl : UserControl
+    public partial class User_CreateCV : UserControl
     {
-        public DashboardUserControl()
+        public User_CreateCV()
         {
             InitializeComponent();
+        }
+
+        private void AddTraining_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            AddTraining train = new AddTraining();
+            train.Show();
         }
     }
 }
