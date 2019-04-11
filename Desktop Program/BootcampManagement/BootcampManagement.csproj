@@ -99,11 +99,10 @@
     <Compile Include="Migrations\201904110757460_add_model_programming_language.Designer.cs">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Migrations\201904110847320_add_column_name_to_organization.cs" />
     <Compile Include="Migrations\201904110847320_add_column_name_to_organization.Designer.cs">
       <DependentUpon>201904110847320_add_column_name_to_organization.cs</DependentUpon>
-=======
+    </Compile>
     <Compile Include="Migrations\201904110828546_update-typedata.cs" />
     <Compile Include="Migrations\201904110828546_update-typedata.Designer.cs">
       <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
@@ -119,7 +118,10 @@
     <Compile Include="Migrations\201904111313477_fixerrordebugg.cs" />
     <Compile Include="Migrations\201904111313477_fixerrordebugg.Designer.cs">
       <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
->>>>>>> ece70946dbe09e407cc3b6ed8a532044d47b9ba3
+    </Compile>
+    <Compile Include="Migrations\201904111340564_typedata_migration.cs" />
+    <Compile Include="Migrations\201904111340564_typedata_migration.Designer.cs">
+      <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_AccessCard.cs" />
@@ -225,10 +227,9 @@
     <EmbeddedResource Include="Migrations\201904110757460_add_model_programming_language.resx">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\201904110847320_add_column_name_to_organization.resx">
       <DependentUpon>201904110847320_add_column_name_to_organization.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110828546_update-typedata.resx">
       <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,7 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904111313477_fixerrordebugg.resx">
       <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
->>>>>>> ece70946dbe09e407cc3b6ed8a532044d47b9ba3
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904111340564_typedata_migration.resx">
+      <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
