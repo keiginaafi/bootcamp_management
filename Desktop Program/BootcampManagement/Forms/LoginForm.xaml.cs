@@ -43,7 +43,6 @@ namespace BootcampManagement
         {
             RegisterForm RegForm = new RegisterForm();
             RegForm.Show();
-            this.Close(); 
         }
     }
 }
