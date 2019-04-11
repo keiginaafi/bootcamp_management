@@ -21,23 +21,6 @@ C:\Users\septimandaro\documents\visual studio 2015\Projects\BootcampManagement\B
 C:\Users\septimandaro\documents\visual studio 2015\Projects\BootcampManagement\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\BootcampManagement\BootcampManagement\obj\Debug\UserControls\LoginUserControl.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\BootcampManagement\BootcampManagement\obj\Debug\UserControls\LoginUserControl.baml
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignColors.dll
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.baml
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.g.resources
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.g.cs
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.g.cs
@@ -99,20 +82,36 @@ E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desk
 E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.editNullableUpdateDate.resources
 E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
 E:\B O O T C A M P\ProjectBootcampManagement\Backup\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.g.cs
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.g.cs
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.dll
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.xml
-C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.baml
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.baml
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.g.resources
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.UpdateMasterUser.resources
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.editNullableDeleteDate.resources
 C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.editNullableUpdateDate.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+C:\Users\septimandaro\Documents\Visual Studio 2015\Projects\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
