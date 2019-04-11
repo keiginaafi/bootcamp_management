@@ -27,8 +27,8 @@ namespace BootcampManagement.UserControls
 
         private void AddTraining_Btn_Click(object sender, RoutedEventArgs e)
         {
-            AddTraining train = new AddTraining();
-            train.Show();
+            //AddTraining train = new AddTraining();
+            //train.Show();
         }
     }
 }

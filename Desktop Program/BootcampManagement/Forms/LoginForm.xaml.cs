@@ -52,60 +52,70 @@ namespace BootcampManagement
 
         private void Login_Btn_Click(object sender, RoutedEventArgs e)
         {
-            var username = UsernameLogin_Tbox.Text;
-            var password = PasswordLogin_Pbox.Password;
-            var hashedPassword = getMD5Hash(md5Hash, password);
-            var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username || x.Password == hashedPassword);            
-            if(getAccount == null)
+            if(String.IsNullOrWhiteSpace(UsernameLogin_Tbox.Text) || String.IsNullOrWhiteSpace(PasswordLogin_Pbox.Password))
             {
-                MessageBox.Show("Invalid Username or Password");
+                MessageBox.Show("Fill Username and Password");
                 UsernameLogin_Tbox.Background = new SolidColorBrush(Colors.Red);
                 PasswordLogin_Pbox.Background = new SolidColorBrush(Colors.Red);
             }
             else
             {
-                switch (getAccount.TB_M_Roles.Name)
+                var username = UsernameLogin_Tbox.Text;
+                var password = PasswordLogin_Pbox.Password;
+                var hashedPassword = getMD5Hash(md5Hash, password);
+                var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username || x.Password == hashedPassword);
+                if (getAccount == null)
                 {
-                    case "User":
-                        Dashboard dashboard = new Dashboard();
-                        UsernameLogin_Tbox.Clear();
-                        dashboard.Show();
-                        this.Close();
-                        break;
-                    case "Member":
-                        Dashboard board = new Dashboard();
-                        UsernameLogin_Tbox.Clear();
-                        board.Show();
-                        this.Close();
-                        break;
-                    case "Trainer":
-                        Dashboard dash = new Dashboard();
-                        UsernameLogin_Tbox.Clear();
-                        dash.Show();
-                        this.Close();
-                        break;
-                    case "HR":
-                        Dashboard shboard = new Dashboard();
-                        UsernameLogin_Tbox.Clear();
-                        shboard.Show();
-                        this.Close();
-                        break;
-                    case "Manager":
-                        Dashboard dashbo = new Dashboard();
-                        UsernameLogin_Tbox.Clear();
-                        dashbo.Show();
-                        this.Close();
-                        break;
-                    case "Admin":
-                        Dashboard ashboa = new Dashboard();
-                        ashboa.Show();
-                        this.Close();
-                        break;
-                    default:
-                        MessageBox.Show("Invalid Username or Password");
-                        break;
+                    MessageBox.Show("Invalid Username or Password");
+                    UsernameLogin_Tbox.Background = new SolidColorBrush(Colors.Red);
+                    PasswordLogin_Pbox.Background = new SolidColorBrush(Colors.Red);
+                }
+                else
+                {
+                    switch (getAccount.TB_M_Roles.Name)
+                    {
+                        case "User":
+                            Dashboard dashboard = new Dashboard();
+                            UsernameLogin_Tbox.Clear();
+                            dashboard.Show();
+                            this.Close();
+                            break;
+                        case "Member":
+                            Dashboard board = new Dashboard();
+                            UsernameLogin_Tbox.Clear();
+                            board.Show();
+                            this.Close();
+                            break;
+                        case "Trainer":
+                            Dashboard dash = new Dashboard();
+                            UsernameLogin_Tbox.Clear();
+                            dash.Show();
+                            this.Close();
+                            break;
+                        case "HR":
+                            Dashboard shboard = new Dashboard();
+                            UsernameLogin_Tbox.Clear();
+                            shboard.Show();
+                            this.Close();
+                            break;
+                        case "Manager":
+                            Dashboard dashbo = new Dashboard();
+                            UsernameLogin_Tbox.Clear();
+                            dashbo.Show();
+                            this.Close();
+                            break;
+                        case "Admin":
+                            Dashboard ashboa = new Dashboard();
+                            ashboa.Show();
+                            this.Close();
+                            break;
+                        default:
+                            MessageBox.Show("Invalid Username or Password");
+                            break;
+                    }
                 }
             }
+            
         }
 
         static string getMD5Hash(MD5 md5Hash, string input)
