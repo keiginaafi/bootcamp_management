@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
 E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
@@ -35,3 +36,37 @@ E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Pro
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
+=======
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.pdb
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.dll
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.dll
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignColors.dll
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.xml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\EntityFramework.SqlServer.xml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csprojResolveAssemblyReference.cache
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.g.cs
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.cache
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement_MarkupCompile.lref
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\App.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\LoginForm.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\Dashboard.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\Forms\RegisterForm.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\CreateCVUserControl.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\UserControls\DashboardUserControl.baml
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.g.resources
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Properties.Resources.resources
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.addingModel.resources
+>>>>>>> 5f33e5d71738c0e8d5608c15f3cb4a6a1c372411
