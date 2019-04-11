@@ -72,11 +72,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-<<<<<<< HEAD
     <Compile Include="Controller\AccountController.cs" />
-=======
     <Compile Include="Controller\CvController.cs" />
->>>>>>> 38871b90125d4876b430664492bd0c6d15259d1b
     <Compile Include="Controller\ReligionController.cs" />
     <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
@@ -89,20 +86,13 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Interface\IAccount.cs" />
-=======
     <Compile Include="Interface\ICv.cs" />
->>>>>>> 38871b90125d4876b430664492bd0c6d15259d1b
     <Compile Include="Interface\IReligion.cs" />
     <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
     <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IVillage.cs" />
-    <Compile Include="Migrations\201904110639111_addingModel.cs" />
-    <Compile Include="Migrations\201904110639111_addingModel.Designer.cs">
-      <DependentUpon>201904110639111_addingModel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201904110757460_add_model_programming_language.cs" />
     <Compile Include="Migrations\201904110757460_add_model_programming_language.Designer.cs">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
@@ -118,6 +108,10 @@
     <Compile Include="Migrations\201904110911379_update-typedata-Datebasemodel.cs" />
     <Compile Include="Migrations\201904110911379_update-typedata-Datebasemodel.Designer.cs">
       <DependentUpon>201904110911379_update-typedata-Datebasemodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904111313477_fixerrordebugg.cs" />
+    <Compile Include="Migrations\201904111313477_fixerrordebugg.Designer.cs">
+      <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_AccessCard.cs" />
@@ -220,9 +214,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201904110639111_addingModel.resx">
-      <DependentUpon>201904110639111_addingModel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110757460_add_model_programming_language.resx">
       <DependentUpon>201904110757460_add_model_programming_language.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110911379_update-typedata-Datebasemodel.resx">
       <DependentUpon>201904110911379_update-typedata-Datebasemodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904111313477_fixerrordebugg.resx">
+      <DependentUpon>201904111313477_fixerrordebugg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

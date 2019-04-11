@@ -7,13 +7,13 @@ namespace BootcampManagement.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addingModel : IMigrationMetadata
+    public sealed partial class fixerrordebugg : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addingModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(fixerrordebugg));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904110639111_addingModel"; }
+            get { return "201904111313477_fixerrordebugg"; }
         }
         
         string IMigrationMetadata.Source
