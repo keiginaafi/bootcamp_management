@@ -152,3 +152,6 @@ C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\Bo
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.csproj.GenerateResource.Cache
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.almost_all_migration_and_fixed_region_district.resources
 C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.Migrations.latest_migration.resources
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\bin\Debug\BootcampManagement.exe.config
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.exe
+E:\Metrodata\week6\Git\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\BootcampManagement.pdb
