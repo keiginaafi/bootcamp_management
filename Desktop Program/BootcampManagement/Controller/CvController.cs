@@ -19,17 +19,31 @@ namespace BootcampManagement.Controller
 
         public TB_T_CV Get(int id)
         {
-            //var get = myContext.TB_M_CVs;
-            throw new NotImplementedException();
+            var get = myContext.TB_T_CVs.SingleOrDefault(x => x.id == id);
+            return get;
+            //throw new NotImplementedException();
         }
 
         public bool Insert(TB_T_CV cv)
         {
-            throw new NotImplementedException();
+            cv.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            cv.EditDate = null;
+            cv.DeleteDate = null;
+            myContext.TB_T_CVs.Add(cv);
+            return saveData(myContext);                        
         }
 
         public bool Update(int id, TB_T_CV cv)
         {
+            //var get = Get(id);
+            //if(get != null)
+            //{
+                
+            //}
+            //else
+            //{
+
+            //}
             throw new NotImplementedException();
         }
     }
