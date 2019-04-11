@@ -43,12 +43,10 @@ namespace BootcampManagement
         public DbSet<TB_T_WorkAssignment> TB_T_WorkAssignments { get; set; }
         public DbSet<TB_M_OperatingSystem> TB_M_OperatingSystems { get; set; }
         public DbSet<TB_T_OperatingSystem> TB_T_OperatingSystems { get; set; }
-        public DbSet<TB_M_Training> TB_M_Trainings { get; set; }
         public DbSet<TB_T_Training> TB_T_Trainings { get; set; }
         public DbSet<TB_M_Room> TB_M_Rooms { get; set; }
         public DbSet<TB_M_Batch> TB_M_Batchs { get; set; }
         public DbSet<TB_M_Class> TB_M_Classs { get; set; }
-        public DbSet<TB_M_Trainer> TB_M_Trainer { get; set; }
         public DbSet<TB_M_BootcampMember> TB_M_BootcampMembers { get; set; }
         public DbSet<TB_T_Class> TB_T_Classs { get; set; }
         public DbSet<TB_M_Lesson> TB_M_Lessons { get; set; }
