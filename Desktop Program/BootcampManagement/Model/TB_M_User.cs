@@ -10,9 +10,9 @@ namespace BootcampManagement.Model
     {
         public string First_name { get; set; }
         public string Last_name { get; set; }
-        public DateTime Date_of_birth { get; set; }
+        public DateTimeOffset Date_of_birth { get; set; }
         public bool IsMarried { get; set; }
-        public char Gender { get; set; }
+        public string Gender { get; set; }
         public string Email { get; set; }
         public string Contact { get; set; }
         public string Street_address { get; set; }

@@ -12,8 +12,8 @@ namespace BootcampManagement.Model
         [Key]
         public int id { get; set; }
         public bool IsDelete { get; set; }
-        public DateTime CreateDate { get; set; }
-        public DateTime ?EditDate { get; set; }
-        public DateTime ?DeleteDate { get; set; }
+        public DateTimeOffset CreateDate { get; set; }
+        public DateTimeOffset ?EditDate { get; set; }
+        public DateTimeOffset ?DeleteDate { get; set; }
     }
 }

@@ -72,6 +72,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\ReligionController.cs" />
     <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interface\IAccount.cs" />
     <Compile Include="Interface\IReligion.cs" />
     <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
@@ -104,6 +106,18 @@
     <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.cs" />
     <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.Designer.cs">
       <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904110828546_update-typedata.cs" />
+    <Compile Include="Migrations\201904110828546_update-typedata.Designer.cs">
+      <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904110906398_update-typedata-Date.cs" />
+    <Compile Include="Migrations\201904110906398_update-typedata-Date.Designer.cs">
+      <DependentUpon>201904110906398_update-typedata-Date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904110911379_update-typedata-Datebasemodel.cs" />
+    <Compile Include="Migrations\201904110911379_update-typedata-Datebasemodel.Designer.cs">
+      <DependentUpon>201904110911379_update-typedata-Datebasemodel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_Account.cs" />
@@ -202,6 +216,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904110439565_RenameTBRegionToDistrict.resx">
       <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110828546_update-typedata.resx">
+      <DependentUpon>201904110828546_update-typedata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110906398_update-typedata-Date.resx">
+      <DependentUpon>201904110906398_update-typedata-Date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904110911379_update-typedata-Datebasemodel.resx">
+      <DependentUpon>201904110911379_update-typedata-Datebasemodel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
