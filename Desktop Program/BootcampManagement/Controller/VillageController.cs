@@ -29,6 +29,13 @@ namespace BootcampManagement.Controller
             throw new NotImplementedException();
         }
 
+        public List<TB_M_Village> GetList(int id)
+        {
+            //throw new NotImplementedException();
+            var get = myContext.TB_M_Villages.Where(x => x.TB_M_Districts.id == id).ToList();
+            return get;
+        }
+
         public bool Insert(TB_M_Village item)
         {
             throw new NotImplementedException();

@@ -72,6 +72,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\ReligionController.cs" />
     <Compile Include="Controller\SubDistrictController.cs" />
     <Compile Include="Controller\ProvinceController.cs" />
     <Compile Include="Controller\DistrictController.cs" />
@@ -83,26 +84,28 @@
     <Compile Include="Forms\RegisterForm.xaml.cs">
       <DependentUpon>RegisterForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interface\IReligion.cs" />
     <Compile Include="Interface\ISubDistrict.cs" />
     <Compile Include="Interface\IProvince.cs" />
     <Compile Include="Interface\IDistrict.cs" />
     <Compile Include="Interface\IVillage.cs" />
-    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.cs" />
-    <Compile Include="Migrations\201904100817075_editNullableDeleteDate.Designer.cs">
-      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+    <Compile Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.cs" />
+    <Compile Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.Designer.cs">
+      <DependentUpon>201904110414201_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.cs" />
-    <Compile Include="Migrations\201904100821191_editNullableUpdateDate.Designer.cs">
-      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
+    <Compile Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.cs" />
+    <Compile Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.Designer.cs">
+      <DependentUpon>201904110426284_almost_all_migration_and_fixed_region_districtv2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.cs" />
-    <Compile Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.Designer.cs">
-      <DependentUpon>201904110247582_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
+    <Compile Include="Migrations\201904110437522_AddNameAndFKTBRegion.cs" />
+    <Compile Include="Migrations\201904110437522_AddNameAndFKTBRegion.Designer.cs">
+      <DependentUpon>201904110437522_AddNameAndFKTBRegion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904110303031_latest_migration.cs" />
-    <Compile Include="Migrations\201904110303031_latest_migration.Designer.cs">
-      <DependentUpon>201904110303031_latest_migration.cs</DependentUpon>
+    <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.cs" />
+    <Compile Include="Migrations\201904110439565_RenameTBRegionToDistrict.Designer.cs">
+      <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_Account.cs" />
     <Compile Include="Model\TB_M_Application.cs" />
     <Compile Include="Model\TB_M_Department.cs" />
@@ -114,6 +117,7 @@
     <Compile Include="Model\TB_M_Major.cs" />
     <Compile Include="Model\TB_M_OperatingSystem.cs" />
     <Compile Include="Model\TB_M_Organization.cs" />
+    <Compile Include="Model\TB_M_District.cs" />
     <Compile Include="Model\TB_M_Role.cs" />
     <Compile Include="Model\TB_M_Trainer.cs" />
     <Compile Include="Model\TB_M_Training.cs" />
@@ -168,14 +172,8 @@
   <ItemGroup>
     <Compile Include="Core\BaseModel.cs" />
     <Compile Include="Interface\IUser.cs" />
-    <Compile Include="Migrations\201904100649548_UpdateMasterUser.cs" />
-    <Compile Include="Migrations\201904100649548_UpdateMasterUser.Designer.cs">
-      <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_Sub_District.cs" />
     <Compile Include="Model\TB_M_Province.cs" />
-    <Compile Include="Model\TB_M_District.cs" />
     <Compile Include="Model\TB_M_Religion.cs" />
     <Compile Include="Model\TB_M_User.cs" />
     <Compile Include="Model\TB_M_Village.cs" />
@@ -193,20 +191,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201904100649548_UpdateMasterUser.resx">
-      <DependentUpon>201904100649548_UpdateMasterUser.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110414201_almost_all_migration_and_fixed_region_district.resx">
+      <DependentUpon>201904110414201_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904100817075_editNullableDeleteDate.resx">
-      <DependentUpon>201904100817075_editNullableDeleteDate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110426284_almost_all_migration_and_fixed_region_districtv2.resx">
+      <DependentUpon>201904110426284_almost_all_migration_and_fixed_region_districtv2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904100821191_editNullableUpdateDate.resx">
-      <DependentUpon>201904100821191_editNullableUpdateDate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110437522_AddNameAndFKTBRegion.resx">
+      <DependentUpon>201904110437522_AddNameAndFKTBRegion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904110247582_almost_all_migration_and_fixed_region_district.resx">
-      <DependentUpon>201904110247582_almost_all_migration_and_fixed_region_district.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904110303031_latest_migration.resx">
-      <DependentUpon>201904110303031_latest_migration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904110439565_RenameTBRegionToDistrict.resx">
+      <DependentUpon>201904110439565_RenameTBRegionToDistrict.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -20,13 +20,20 @@ namespace BootcampManagement.Controller
         public List<TB_M_District> Get()
         {
             //throw new NotImplementedException();
-            var get = myContext.TB_M_Districts.Where(x => x.IsDelete == false).ToList();
+            var get = myContext.TB_M_Regions.Where(x => x.IsDelete == false).ToList();
             return get;
         }
 
         public TB_M_District Get(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public List<TB_M_District> GetList(int id)
+        {
+            //throw new NotImplementedException();
+            var get = myContext.TB_M_Regions.Where(x => x.TB_M_Provinces.id == id).ToList();
+            return get;
         }
 
         public bool Insert(TB_M_District item)
