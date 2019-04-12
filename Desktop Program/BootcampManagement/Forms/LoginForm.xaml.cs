@@ -74,37 +74,37 @@ namespace BootcampManagement
                     switch (getAccount.TB_M_Roles.Name)
                     {
                         case "User":
-                            Dashboard dashboard = new Dashboard();
+                            Dashboard dashboard = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             dashboard.Show();
                             this.Close();
                             break;
                         case "Member":
-                            Dashboard board = new Dashboard();
+                            Dashboard board = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             board.Show();
                             this.Close();
                             break;
                         case "Trainer":
-                            Dashboard dash = new Dashboard();
+                            Dashboard dash = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             dash.Show();
                             this.Close();
                             break;
                         case "HR":
-                            Dashboard shboard = new Dashboard();
+                            Dashboard shboard = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             shboard.Show();
                             this.Close();
                             break;
                         case "Manager":
-                            Dashboard dashbo = new Dashboard();
+                            Dashboard dashbo = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             dashbo.Show();
                             this.Close();
                             break;
                         case "Admin":
-                            Dashboard ashboa = new Dashboard();
+                            Dashboard ashboa = new Dashboard(getAccount.TB_M_Roles.Name);
                             ashboa.Show();
                             this.Close();
                             break;

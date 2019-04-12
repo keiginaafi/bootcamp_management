@@ -13,7 +13,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <Button x:Name="Account_Btn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#878787" ToolTip="Account">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Mrp4m" HorizontalAlignment="Left" Margin="-10,0,15,0" FontFamily="Yu Gothic UI Light"></TextBlock>
+                        <TextBlock x:Name="ProfileSession" Text="Your Profile" HorizontalAlignment="Left" Margin="-10,0,15,0" FontFamily="Yu Gothic UI Light"></TextBlock>
                         <materialDesign:PackIcon Kind="AccountCircle" Width="30" Height="30" Margin="-10 -5" HorizontalAlignment="Right"/>
                     </StackPanel>
                 </Button>

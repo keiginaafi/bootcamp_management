@@ -16,6 +16,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data.SqlClient;
 
 namespace BootcampManagement
 {
@@ -24,6 +25,8 @@ namespace BootcampManagement
     /// </summary>
     public partial class RegisterForm : Window
     {
+        
+
         IProvince iProvince = new ProvinceController();
         ISubDistrict iSubDistrict = new SubDistrictController();
         IDistrict iDistrict = new DistrictController();
@@ -93,6 +96,11 @@ namespace BootcampManagement
 
         private void Register_Btn_Click(object sender, RoutedEventArgs e)
         {
+            SqlDataReader reader;
+            SqlCommand command;
+            string query;
+            string conn = "Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=BootcampManagement; Integrated Security=true";
+            SqlConnection myConnection = new SqlConnection(conn);
             //int a = Convert.ToInt16(Supp_Cbx.SelectedValue);
             //var b = iSupplier.Get(a);
             Regex email = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
@@ -208,9 +216,35 @@ namespace BootcampManagement
                                                         tB_M_Account.Username = Email_Tbox.Text;
 
                                                         myContext.TB_M_Accounts.Add(tB_M_Account);
-                                                        var result1 = myContext.SaveChanges();
+                                                        //var result1 = myContext.SaveChanges();
 
-                                                        if(result > 0 && result1 > 0)
+                                                        query = "insert into TB_M_Account " +
+                                                        "(id,Username, Password, IsDelete, CreateDate, TB_M_Roles_id) values " +
+                                                        "('" + tB_M_Account.id + "', " +
+                                                        "'" + tB_M_Account.Username + "', " +
+                                                        "'" + tB_M_Account.Password + "', " +
+                                                        "'" + 0 + "', " +
+                                                        "'" + DateTimeOffset.UtcNow.ToLocalTime() + "', " +
+                                                        "'" + 1 + "')";
+
+                                                        command = new SqlCommand(query, myConnection);
+                                                        myConnection.Open();
+                                                        reader = command.ExecuteReader();
+                                                        if (reader == null)
+                                                        {
+                                                            MessageBox.Show("Insert Successfully");
+                                                            myConnection.Close();
+                                                        }
+                                                        else
+                                                        {
+                                                            myConnection.Close();
+                                                        }
+
+                                                        //var getData = myContext.TB_M_Accounts.SingleOrDefault(x => x.Username == tB_M_Account.Username);
+                                                        //getData.id = tB_M_User.id;
+                                                        //var result2 = myContext.SaveChanges();
+
+                                                        if (result > 0)
                                                         {
                                                             MessageBox.Show("Register Success");
                                                             FirstName_Tbox.Clear();
