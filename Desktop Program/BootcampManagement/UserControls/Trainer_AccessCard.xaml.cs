@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace BootcampManagement.UserControls
 {
     /// <summary>
-    /// Interaction logic for Trainer_Site.xaml
+    /// Interaction logic for Trainer_AccessCard.xaml
     /// </summary>
-    public partial class Trainer_Site : UserControl
+    public partial class Trainer_AccessCard : UserControl
     {
-        public Trainer_Site()
+        public Trainer_AccessCard()
         {
             InitializeComponent();
         }
-
     }
 }

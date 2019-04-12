@@ -21,11 +21,12 @@ namespace BootcampManagement
     /// </summary>
     public partial class Dashboard : Window
     {
-        string role = "Trainer";
+        string role = "User";
 
-        public Dashboard()
+        public Dashboard(string roles)
         {
             InitializeComponent();
+            this.role = roles;
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -83,6 +84,14 @@ namespace BootcampManagement
                         Main_Grid.Children.Clear();
                         Main_Grid.Children.Add(new User_Dashboard());
                         break;
+                    case 2:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new Trainer_Locker());
+                        break;
+                    case 3:
+                        Main_Grid.Children.Clear();
+                        Main_Grid.Children.Add(new Trainer_AccessCard());
+                        break;
                     case 4:
                         Main_Grid.Children.Clear();
                         Main_Grid.Children.Add(new Trainer_Lesson());
@@ -96,6 +105,18 @@ namespace BootcampManagement
                         break;
                 }
             }
+        }
+
+        private void DailyScore_LView_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Main_Grid.Children.Clear();
+            Main_Grid.Children.Add(new Trainer_DailyScore());
+        }
+
+        private void WeeklyScore_LView_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Main_Grid.Children.Clear();
+            Main_Grid.Children.Add(new Trainer_WeeklyScore());
         }
     }
 }

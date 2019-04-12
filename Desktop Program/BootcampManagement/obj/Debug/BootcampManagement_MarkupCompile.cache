@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\obj\Debug\
 BootcampManagement
 none
 false
 DEBUG;TRACE
-C:\Users\Hilmi\Documents\Project Bootcamp\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
-9-1866142368
+E:\B O O T C A M P\ProjectBootcampManagement\App\bootcamp_management\Desktop Program\BootcampManagement\App.xaml
+12-391781508
 
-96-942608700
-18-1929701126
-Forms\AddTraining.xaml;Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;UserControls\Trainer_DailyScore.xaml;UserControls\Trainer_Lesson.xaml;UserControls\Trainer_Site.xaml;UserControls\User_CreateCV.xaml;UserControls\User_Dashboard.xaml;
+991295416011
+18679364465
+Forms\AddTraining.xaml;Forms\LoginForm.xaml;Forms\Dashboard.xaml;Forms\RegisterForm.xaml;UserControls\Trainer_AccessCard.xaml;UserControls\Trainer_DailyScore.xaml;UserControls\Trainer_Lesson.xaml;UserControls\Trainer_Locker.xaml;UserControls\Trainer_Site.xaml;UserControls\Trainer_WeeklyScore.xaml;UserControls\User_CreateCV.xaml;UserControls\User_Dashboard.xaml;
 
 False
 

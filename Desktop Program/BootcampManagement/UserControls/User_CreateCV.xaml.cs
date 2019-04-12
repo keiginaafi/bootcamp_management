@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ﻿using BootcampManagement.Model;
+=======
+﻿using BootcampManagement.Forms;
+>>>>>>> 0a9e0687592d5a9e73b1655c42f535b9bd7b97c2
 using System;
 using System.Collections.Generic;
 using System.Linq;

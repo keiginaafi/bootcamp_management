@@ -49,7 +49,6 @@ namespace BootcampManagement
         {
             RegisterForm RegForm = new RegisterForm();
             RegForm.Show();
-            this.Close(); 
         }
 
         private void Login_Btn_Click(object sender, RoutedEventArgs e)
@@ -65,7 +64,7 @@ namespace BootcampManagement
                 var username = UsernameLogin_Tbox.Text;
                 var password = PasswordLogin_Pbox.Password;
                 var hashedPassword = getMD5Hash(md5Hash, password);
-                var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username || x.Password == hashedPassword);
+                var getAccount = myContext.TB_M_Accounts.Include("TB_M_Roles").SingleOrDefault(x => x.Username == username && x.Password == hashedPassword);
                 if (getAccount == null)
                 {
                     MessageBox.Show("Invalid Username or Password");
@@ -77,38 +76,42 @@ namespace BootcampManagement
                     switch (getAccount.TB_M_Roles.Name)
                     {
                         case "User":
+<<<<<<< HEAD
                             GlobalVariables.userId = getAccount.id;
                             Dashboard dashboard = new Dashboard();
+=======
+                            Dashboard dashboard = new Dashboard(getAccount.TB_M_Roles.Name);
+>>>>>>> 0a9e0687592d5a9e73b1655c42f535b9bd7b97c2
                             UsernameLogin_Tbox.Clear();
                             dashboard.Show();
                             this.Close();
                             break;
                         case "Member":
-                            Dashboard board = new Dashboard();
+                            Dashboard board = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             board.Show();
                             this.Close();
                             break;
                         case "Trainer":
-                            Dashboard dash = new Dashboard();
+                            Dashboard dash = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             dash.Show();
                             this.Close();
                             break;
                         case "HR":
-                            Dashboard shboard = new Dashboard();
+                            Dashboard shboard = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             shboard.Show();
                             this.Close();
                             break;
                         case "Manager":
-                            Dashboard dashbo = new Dashboard();
+                            Dashboard dashbo = new Dashboard(getAccount.TB_M_Roles.Name);
                             UsernameLogin_Tbox.Clear();
                             dashbo.Show();
                             this.Close();
                             break;
                         case "Admin":
-                            Dashboard ashboa = new Dashboard();
+                            Dashboard ashboa = new Dashboard(getAccount.TB_M_Roles.Name);
                             ashboa.Show();
                             this.Close();
                             break;
