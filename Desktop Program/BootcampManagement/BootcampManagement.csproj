@@ -126,6 +126,10 @@
     <Compile Include="Migrations\201904111340564_typedata_migration.Designer.cs">
       <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904120635326_model_revision.cs" />
+    <Compile Include="Migrations\201904120635326_model_revision.Designer.cs">
+      <DependentUpon>201904120635326_model_revision.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\TB_M_AccessCard.cs" />
     <Compile Include="Model\TB_M_Account.cs" />
@@ -293,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904111340564_typedata_migration.resx">
       <DependentUpon>201904111340564_typedata_migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904120635326_model_revision.resx">
+      <DependentUpon>201904120635326_model_revision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

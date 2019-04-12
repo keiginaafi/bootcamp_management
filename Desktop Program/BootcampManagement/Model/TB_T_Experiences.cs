@@ -8,6 +8,8 @@ namespace BootcampManagement.Model
 {
     class TB_T_Experiences : BaseModel
     {
+        public string Description { get; set; }
+        public string End_year { get; set; }
         public virtual TB_M_Experience TB_M_Experiences { get; set; }
         public virtual TB_T_CV TB_T_CVs { get; set; }
     }

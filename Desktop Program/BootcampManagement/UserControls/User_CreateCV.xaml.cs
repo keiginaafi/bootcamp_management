@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 ﻿using BootcampManagement.Model;
-=======
 ﻿using BootcampManagement.Forms;
->>>>>>> 0a9e0687592d5a9e73b1655c42f535b9bd7b97c2
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +29,21 @@ namespace BootcampManagement.UserControls
         TB_M_University TB_M_Universities = new TB_M_University();
         TB_M_Faculty TB_M_Faculties = new TB_M_Faculty();
         TB_M_Major TB_M_Majors = new TB_M_Major();
-        TB_T_Education TB_T_Educations = new TB_T_Education();        
+        TB_T_Education TB_T_Educations = new TB_T_Education();
+        TB_M_Organization TB_M_Organizations = new TB_M_Organization();
+        TB_T_Organization TB_T_Organizations = new TB_T_Organization();
+        TB_M_Experience TB_M_Experiences = new TB_M_Experience();
+        TB_T_Experiences TB_T_Experiences = new TB_T_Experiences();
+        TB_M_Application TB_M_Applications = new TB_M_Application();
+        TB_T_Application TB_T_Applications = new TB_T_Application();
+        TB_M_Language TB_M_Languages = new TB_M_Language();
+        TB_T_Language TB_T_Languages = new TB_T_Language();
+        TB_M_DevelopmentTool TB_M_DevelopmentTools = new TB_M_DevelopmentTool();
+        TB_T_DevelopmentTool TB_T_DevelopmentTools = new TB_T_DevelopmentTool();
+        TB_M_ProgrammingLanguage TB_M_ProgrammingLanguages = new TB_M_ProgrammingLanguage();
+        TB_T_ProgrammingLanguage TB_T_ProgrammingLanguages = new TB_T_ProgrammingLanguage();
+        TB_M_Training TB_M_Trainings = new TB_M_Training();
+        TB_T_Training TB_T_Trainings = new TB_T_Training();
 
         public User_CreateCV()
         {
@@ -83,8 +94,60 @@ namespace BootcampManagement.UserControls
             TB_T_Educations.GPA = gpa;
             TB_T_Educations.Graduation_Year = graduate;
             TB_T_Educations.TB_M_Majors = TB_M_Majors;
-            TB_T_Educations.TB_T_CVs = TB_T_CVs;            
+            TB_T_Educations.TB_T_CVs = TB_T_CVs;
+            TB_T_Educations.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            myContext.SaveChanges();
 
+            TB_M_Organizations.Name = org;
+            TB_M_Organizations.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            myContext.TB_M_Organizations.Add(TB_M_Organizations);
+
+            TB_T_Organizations.Name = note;
+            TB_T_Organizations.TB_M_Organizations = TB_M_Organizations;
+            TB_T_Organizations.TB_T_CVs = TB_T_CVs;
+            TB_T_Organizations.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            myContext.TB_T_Organizations.Add(TB_T_Organizations);
+            myContext.SaveChanges();
+
+            TB_M_Experiences.Company_Name = company;
+            TB_M_Experiences.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            myContext.TB_M_Experiences.Add(TB_M_Experiences);
+
+            TB_T_Experiences.Description = expDesc;
+            TB_T_Experiences.End_year = periodend;
+            TB_T_Experiences.TB_M_Experiences = TB_M_Experiences;
+            TB_T_Experiences.TB_T_CVs = TB_T_CVs;
+            TB_T_Experiences.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            myContext.TB_T_Experiences.Add(TB_T_Experiences);
+            myContext.SaveChanges();
+
+            TB_M_Applications = myContext.TB_M_Applications.Find(app);
+            TB_T_Applications.TB_M_Applications = TB_M_Applications;
+            TB_T_Applications.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            TB_T_Applications.TB_T_CVs = TB_T_CVs;
+            myContext.TB_T_Applications.Add(TB_T_Applications);
+            myContext.SaveChanges();
+
+            TB_M_Languages = myContext.TB_M_Languages.Find(app);
+            TB_T_Languages.TB_M_Languages = TB_M_Languages;
+            TB_T_Languages.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            TB_T_Languages.TB_T_CVs = TB_T_CVs;
+            myContext.TB_T_Languages.Add(TB_T_Languages);
+            myContext.SaveChanges();
+
+            TB_M_DevelopmentTools = myContext.TB_M_DevelopmentTools.Find(app);
+            TB_T_DevelopmentTools.TB_M_DevelopmentTools = TB_M_DevelopmentTools;
+            TB_T_DevelopmentTools.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            TB_T_DevelopmentTools.TB_T_CVs = TB_T_CVs;
+            myContext.TB_T_DevelopmentTools.Add(TB_T_DevelopmentTools);
+            myContext.SaveChanges();
+
+            TB_M_ProgrammingLanguages = myContext.TB_M_ProgrammingLanguages.Find(app);
+            TB_T_ProgrammingLanguages.TB_M_ProgrammingLanguages = TB_M_ProgrammingLanguages;
+            TB_T_ProgrammingLanguages.CreateDate = DateTimeOffset.Now.LocalDateTime;
+            TB_T_ProgrammingLanguages.TB_T_Cvs = TB_T_CVs;
+            myContext.TB_T_ProgrammingLanguages.Add(TB_T_ProgrammingLanguages);
+            myContext.SaveChanges();
         }
     }
 }

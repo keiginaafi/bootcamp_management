@@ -14,6 +14,6 @@ namespace BootcampManagement.Model
         public virtual TB_M_User TB_M_Users { get; set; }
         public virtual TB_M_AccessCard TB_M_AccessCards { get; set; }
         public virtual TB_M_Locker TB_M_Lockers { get; set; }
-        public virtual TB_T_CV TB_T_CVs { get; set; }
+        public virtual TB_R_Grade TB_R_Grades { get; set; }
     }
 }

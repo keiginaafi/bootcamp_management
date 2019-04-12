@@ -279,46 +279,6 @@ namespace BootcampManagement
                     }
                 }
             }
-<<<<<<< HEAD
-            tB_M_User.IsMarried = statuss;
-            //End Combo Box Status
-            ComboBoxItem Gender = (ComboBoxItem)Gender_Cmbbox.SelectedItem;
-            tB_M_User.Gender = Gender.Content.ToString();
-            tB_M_User.TB_M_Religions = myContext.TB_M_Religions.Find(Convert.ToInt16(Religion_Cmbbox.SelectedValue));
-            tB_M_User.Email = Email_Tbox.Text;
-            tB_M_User.Contact = Contact_Tbox.Text;
-            tB_M_User.Street_address = StreetAddress_Tbox.Text;
-            tB_M_User.TB_M_Villages = myContext.TB_M_Villages.Find(Convert.ToInt16(Village_Cmbbox.SelectedValue));
-
-            //var result = iUser.Insert(tB_M_User);
-            myContext.TB_M_Users.Add(tB_M_User);
-            myContext.SaveChanges();
-
-            tB_M_Account.Password = MD5Hash(Password_Pbox.Password);
-            tB_M_Account.id = tB_M_User.id;
-            tB_M_Account.TB_M_Roles = myContext.TB_M_Roles.SingleOrDefault(x => x.Name.Contains("User"));
-            tB_M_Account.Username = Email_Tbox.Text;
-
-            myContext.TB_M_Accounts.Add(tB_M_Account);
-            myContext.SaveChanges();
-
-            //var result1 = iAccount.Insert(tB_M_Account);
-
-
-            //if (result)
-            //{
-            //    MessageBox.Show("Success");
-            //    //SupplierName_Txt.Text = "";
-            //    //Id_Txt.Text = "";
-            //    //Item_Dgv.ItemsSource = iItem.Get();
-            //}
-=======
-
-            
-
-            //Validation Null
-            
->>>>>>> 0a9e0687592d5a9e73b1655c42f535b9bd7b97c2
         }
 
         public static string MD5Hash(string text)

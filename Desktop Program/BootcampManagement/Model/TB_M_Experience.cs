@@ -8,8 +8,6 @@ namespace BootcampManagement.Model
 {
     class TB_M_Experience : BaseModel
     {
-        public string Company_Name { get; set; }
-        public string Description { get; set; }
-        public string End_year { get; set; }
+        public string Company_Name { get; set; }        
     }
 }

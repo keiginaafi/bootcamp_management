@@ -76,12 +76,7 @@ namespace BootcampManagement
                     switch (getAccount.TB_M_Roles.Name)
                     {
                         case "User":
-<<<<<<< HEAD
-                            GlobalVariables.userId = getAccount.id;
-                            Dashboard dashboard = new Dashboard();
-=======
                             Dashboard dashboard = new Dashboard(getAccount.TB_M_Roles.Name);
->>>>>>> 0a9e0687592d5a9e73b1655c42f535b9bd7b97c2
                             UsernameLogin_Tbox.Clear();
                             dashboard.Show();
                             this.Close();

@@ -14,7 +14,8 @@ namespace BootcampManagement.Model
         public string Contact { get; set; }
         public DateTime Date_of_birth { get; set; } 
         public bool IsMarried { get; set; }
-        public char Gender { get; set; }
+        public string Gender { get; set; }
+        public string Photo { get; set; }
         //public TB_M_Role ?TB_M_Roles { get; set; }
         public TB_M_Village TB_M_Villages { get; set; }
         //public TB_M_Department ?TB_M_Departments { get; set; }

@@ -15,6 +15,7 @@ namespace BootcampManagement.Model
         public string Gender { get; set; }
         public string Email { get; set; }
         public string Contact { get; set; }
+        public string Photo { get; set; }
         public string Street_address { get; set; }
         public virtual TB_M_Village TB_M_Villages { get; set; }
         public virtual TB_M_Religion TB_M_Religions { get; set; }
