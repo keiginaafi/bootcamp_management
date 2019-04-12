@@ -66,9 +66,14 @@
                           materialDesign:HintAssist.Hint="-Select Religion-"
                           />
             </StackPanel>
-            <StackPanel>
-                <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
-                <TextBox x:Name="Email_Tbox" materialDesign:HintAssist.Hint="Example@email.com" HorizontalAlignment="Left" Height="25" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light"/>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap" Text="Email :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>
+                    <TextBox x:Name="Email_Tbox" materialDesign:HintAssist.Hint="Example@email.com" HorizontalAlignment="Left" Height="25" Margin="30,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" FontFamily="Yu Gothic UI Light" KeyUp="Email_Tbox_KeyUp"/>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock x:Name="EmailValid_Txb" TextWrapping="Wrap" Margin="0,26,0,0" Width="auto" FontSize="10"  FontFamily="Yu Gothic UI" Foreground="#FFDE0000" Height="22"/>
+                </StackPanel>
             </StackPanel>
             <StackPanel>
                 <TextBlock TextWrapping="Wrap" Text="Contact :" Margin="30,5,20,0" FontSize="12"  FontFamily="Yu Gothic UI Bold"/>

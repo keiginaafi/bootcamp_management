@@ -186,6 +186,7 @@ namespace BootcampManagement
                                                 }
                                                 else
                                                 {
+                                                    //var validEmail = myContext.TB_M_Accounts.SingleOrDefault(x => x.Username == (Email_Tbox.Text));
                                                     tB_M_User.TB_M_Villages = myContext.TB_M_Villages.Find(Convert.ToInt16(Village_Cmbbox.SelectedValue));
                                                     if (!IsEmailValid)
                                                     {
@@ -204,6 +205,10 @@ namespace BootcampManagement
 
                                                         MessageBox.Show("Please Accept Term Of Use & Privacy Police");
                                                     }
+                                                    //else if(validEmail != null)
+                                                    //{
+                                                    //    MessageBox.Show("Email is already used");
+                                                    //}
                                                     else
                                                     {
                                                         //var result = iUser.Insert(tB_M_User);
@@ -355,6 +360,24 @@ namespace BootcampManagement
             //this.Close(); ((TextBox)ctl).Text = "";
             //MainPanel.Children.Clear();
             this.Close();
+        }
+
+        private void Email_Tbox_KeyUp(object sender, KeyEventArgs e)
+        {
+            var validEmail = myContext.TB_M_Accounts.SingleOrDefault(x => x.Username == (Email_Tbox.Text));
+            if (validEmail != null)
+            {
+                //MessageBox.Show("Email Sudah Ada Bosku");
+                EmailValid_Txb.Text = "*Email is already used";
+                EmailValid_Txb.Foreground = Brushes.Red;
+                Register_Btn.IsEnabled = false;
+            }
+            else
+            {
+                EmailValid_Txb.Text = "*Email available";
+                EmailValid_Txb.Foreground = Brushes.Green;
+                Register_Btn.IsEnabled = true;
+            }
         }
     }
 }
