@@ -61,7 +61,7 @@
         </StackPanel>
         <StackPanel Margin="445,301,0,0">
             <TextBlock TextWrapping="Wrap" Text="Description :" FontSize="12" FontFamily="Yu Gothic UI Light"/>
-            <TextBox AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Height="72" x:Name="Description_Tbox" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="325" FontFamily="Yu Gothic UI Light"/>
+            <TextBox x:Name="Description_Tbox" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Height="72" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" VerticalAlignment="Stretch" Width="325" FontFamily="Yu Gothic UI Light"/>
         </StackPanel>
 
 
@@ -88,18 +88,18 @@
         </StackPanel>
 
 
-        <StackPanel Orientation="Horizontal" Margin="55,585,44,25">
+        <StackPanel Orientation="Horizontal" Margin="55,584,44,26">
             <StackPanel Orientation="Horizontal" Margin="0,0,257,0">
-                <TextBox x:Name="BrowsePhoto_Btn" materialDesign:HintAssist.Hint="Photo"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="150" Height="35" Margin="0,20,20,20" />
-                <Button x:Name="Browse_Btn" Content="Browse" Width="100" Height="35" FontFamily="Yu Gothic UI Light" Background="#CCCCCC" BorderBrush="#CCCCCC" Foreground="Black"/>
+                <TextBox x:Name="BrowsePhoto_Btn" materialDesign:HintAssist.Hint="Photo"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Width="150" Height="35" Margin="0,26,20,19" />
+                <Button x:Name="Browse_Btn" Content="Browse" Width="100" Height="35" FontFamily="Yu Gothic UI Light" Background="#CCCCCC" BorderBrush="#CCCCCC" Foreground="Black" Margin="0,22"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="Cancel_Btn" Content="Cancel" Width="100" Height="35" Background="#FFCB48" BorderBrush="#FFCB48" FontFamily="Yu Gothic UI Light" Margin="0,0,25,0"/>
-                <Button x:Name="Save_Btn" Content="Save" Width="100" Height="35" FontFamily="Yu Gothic UI Light"/>
+                <Button x:Name="Save_Btn" Content="Save" Width="100" Height="35" FontFamily="Yu Gothic UI Light" Click="Save_Btn_Click"/>
             </StackPanel>
         </StackPanel>
         <StackPanel Margin="55,650,44,26">
-            <TextBlock TextWrapping="Wrap" Text="Size Max 200kb." FontSize="12" FontFamily="Yu Gothic UI Light" Foreground="#DA4B4B" Height="20" Margin="0,0,0.4,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Size Max 200kb." FontSize="12" FontFamily="Yu Gothic UI Light" Foreground="#DA4B4B" Height="20"/>
         </StackPanel>
     </Grid>
 </UserControl>

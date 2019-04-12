@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BootcampManagement.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -21,6 +22,7 @@ namespace BootcampManagement
     public partial class LoginForm : Window
     {
         MyContext myContext = new MyContext();
+        //public static TB_M_User globalUser = new TB_M_User();
         MD5 md5Hash = MD5.Create();
 
         public LoginForm()
@@ -75,6 +77,7 @@ namespace BootcampManagement
                     switch (getAccount.TB_M_Roles.Name)
                     {
                         case "User":
+                            GlobalVariables.userId = getAccount.id;
                             Dashboard dashboard = new Dashboard();
                             UsernameLogin_Tbox.Clear();
                             dashboard.Show();
@@ -116,6 +119,11 @@ namespace BootcampManagement
                 }
             }
             
+        }
+
+        public static class GlobalVariables
+        {
+            public static int userId { get; set; }
         }
 
         static string getMD5Hash(MD5 md5Hash, string input)

@@ -121,7 +121,7 @@ namespace BootcampManagement
 
             tB_M_Account.Password = MD5Hash(Password_Pbox.Password);
             tB_M_Account.id = tB_M_User.id;
-            tB_M_Account.TB_M_Roles = myContext.TB_M_Roles.Find(1);
+            tB_M_Account.TB_M_Roles = myContext.TB_M_Roles.SingleOrDefault(x => x.Name.Contains("User"));
             tB_M_Account.Username = Email_Tbox.Text;
 
             myContext.TB_M_Accounts.Add(tB_M_Account);
